@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>Adamsonian Prayer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <audio id="userSound" src="/static/userSend.mp3"></audio>
+    <audio id="botSound" src="/static/botSend.mp3"></audio>
+
+
+    <style>
+      :root {
+        --white: #fff;
+        --black: #000000;
+        --water: rgb(0, 170, 255);
+        --red: red;
+        --green: green;
+        --blue: #02173f;
+        --yellow: yellow;
+      }
+      * {
+        font-family: "Oswald", sans-serif;
+        margin: 0;
+  padding: 0;
+     
+      }
+
+      h2 {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      /* For WebKit-based browsers */
+      ::-webkit-scrollbar {
+    width: 12px; /* Set the width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Set the background color of the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: rgba(76, 157, 207, 0.705); /* Set the color of the scrollbar handle */
+    border-radius: 6px; /* Set the border radius of the handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #115fa8; /* Set the color of the handle on hover */
+}
+
+      /* Chat container styles */
+      #video-container {
+        position: relative;
+    overflow: hidden;
+    /* 16:9 aspect ratio (change this to match your video's aspect ratio) */
+    padding-top: 56.25%;
+        max-width: 600px;
+        height: 320px;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        background: rgba(49, 118, 134, 0.422);
+        z-index: 1;
+        filter: none;
+        transition: 0.5s;
+        margin-top: 20px;
+      }
+
+      #video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px; /* Adjust the border-radius for iframe if desired */
+}
+
+      #video-container.active {
+        margin-left: 600px;
+      }
+
+      .praymsg{
+        max-width: 600px;
+        height: 200px;
+        margin: 15px auto;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        background: rgb(255, 255, 255);
+        z-index: 1;
+        filter: none;
+        transition: 0.5s;
+        overflow-y: auto;
+        text-align: center;
+      }
+
+      .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; 
+        filter: blur(5px); 
+        background-image: url(static/adubg.jpg); 
+        background-size: cover;
+      }
+
+      .open-button,
+      .close-button {
+        position: absolute;
+        margin-top: 2px;
+        top: 10px;
+        left: 10px;
+        z-index: 2;
+        background-color: var(--blue);
+        color: var(--white);
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+      }
+
+      #mySidebar{
+        box-shadow: 0 0 10px var(--black);
+        border: 1px solid var(--water);
+        background-color: var(--blue);
+        border-radius: 0 6px 0 0;
+        scrollbar-width: none;
+        overflow: hidden;
+        position: fixed;
+        margin-top: 2px;
+        height: 100%;
+        width: 0px;
+        display: flex;
+        flex-direction: column;
+        z-index: 2;
+        align-items: center;
+      }
+      #mySidebar.active{
+        margin-left: 240px;
+      }
+      .sidebar::-webkit-scrollbar {
+        display: none;
+      }
+      .sidebar a {
+        text-decoration: none;
+        color: var(--white);
+        padding: 5px;
+      }
+      .sidebar-logo img {
+        max-width: 180px; 
+        height: auto;
+        margin-top: 30px;
+      }
+      .sidebar-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+      }
+
+.header{
+  width: 100%;
+  height: 45px;
+  background-color: #003366;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+}
+hr {
+  display: block;
+  width: 200px;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:#526D82;
+  border-width:3px;
+}
+    </style>
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="header"> 
+    <button class="toggle-button" onclick="toggleSidebar()" style="border: none; background: none; padding: 0; outline: none;">
+      <img src="{{ url_for('static', filename='adam.png') }}" alt="Logo" style="width: 35px; height: 35px; margin-top: 3px; margin-left: 5px; border-radius: 50%; border: 2px solid white;" />
+    </button> 
+    <h2 style=" font-size: 20px; margin-top: 5px;">AdU - Guide N' Go!</h2>
+    </div>
+    <aside class="sidebar" id="mySidebar">
+      <div class="sidebar-logo">
+        <img id="toggle-icon" src="{{ url_for('static', filename='boticon2.png') }}" alt="Logo" />
+      </div>
+      <hr>
+      <div class="sidebar-links">
+        <div class="spacer"></div>
+        <a class="list-item" href="/"><i><box-icon color="var(--white)" name="line-chart"></box-icon></i>Chat with Adam</a>
+        <a class="list-item" href="/map"><i><box-icon color="var(--white)" name="line-chart"></box-icon></i>Campus Maps</a>
+        <a class="list-item" href="/prayer"><i><box-icon color="var(--white)" name="line-chart"></box-icon></i>Adamsonian Prayer</a>
+        <br>
+        <hr>
+        <br>
+        <a class="list-item" onclick="activateListItem(this)" href="https://www.adamson.edu.ph/2018/"><i><box-icon color="var(--white)" name="dashboard" type="solid"></box-icon></i>Adamson Website</a>
+        <a class="list-item" onclick="activateListItem(this)" href="https://live.adamson.edu.ph"><i><box-icon color="var(--white)" name="dashboard" type="solid"></box-icon></i>Adamson Live</a>
+        <a class="list-item" onclick="activateListItem(this)" href="https://learn.adamson.edu.ph/V4/"><i><box-icon color="var(--white)" name="dashboard" type="solid"></box-icon></i>Learning Management System</a>
+        <a class="list-item" onclick="activateListItem(this)" href="https://adamson.blackboard.com"><i><box-icon color="var(--white)" name="line-chart"></box-icon></i>Blackboard Learn</a>
+      </div>
+    </aside>
+
+
+    <div id="video-container">
+      <iframe width="600" height="320" src="https://www.youtube.com/embed/jPqXaqovgUI?si=nMjFXo03920jDWzG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+      <div class="praymsg">
+      Dear Lord, <br>
+      Teach me the things that are important: <br>
+      To be generous with Your gifts,<br>
+      Compassionate to those who have less,<br>
+      Just in the face of unfair circumstances,<br>
+      True when the world's values contradict my own,<br>
+      Gracious when things don't go my way,<br>
+      And magnanimous when they do.<br><br>
+      May nothing else matter<br>
+      Except Faith in Your goodness, my neighbor's, and mine,<br>
+      Hope that things can get better,<br>
+      And Charity that always sets things right.<br><br>
+      May Your special Love for the Poor,<br>
+      The mark of my uniquely Vincentian education,<br>
+      Be the work I excel in,<br>
+      The standard I constantly refer to,<br>
+      And my courage when I meet You someday.<br><br>
+      O Mary conceived without sin,<br>
+      Pray for us who have recourse to thee.<br><br>
+      St. Vincent de Paul,<br>
+      Pray for us.<br>
+    </div>
+    <script>
+      function toggleSidebar() {
+        var sidebar = document.getElementById("mySidebar");
+        var chatContainer = document.getElementById("chat-container");
+        var toggleButton = document.querySelector(".toggle-button");
+        var pageContent = document.querySelector(".page-content");
+    
+        if (sidebar.style.width === "240px") {
+          sidebar.style.display = "none";
+          sidebar.style.width = "0";
+          chatContainer.style.marginLeft = "auto";
+          toggleIcon.src = "{{ url_for('static', filename='adam.png') }}";
+          pageContent.style.marginLeft = "0";
+        } else {
+          sidebar.style.display = "flex";
+          sidebar.style.width = "240px";
+          chatContainer.style.marginLeft = "250px";
+          toggleIcon.src = "{{ url_for('static', filename='adam.png') }}";
+          pageContent.style.marginLeft = "240px";
+        }
+      }
+    </script>    
+  </body>
+</html>

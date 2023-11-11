@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>Welcome to Guide N' Go!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <audio id="userSound" src="/static/userSend.mp3"></audio>
+    <audio id="botSound" src="/static/botSend.mp3"></audio>
+
+
+    <style>
+      :root {
+        --white: #fff;
+        --black: #000000;
+        --water: rgb(0, 170, 255);
+        --red: red;
+        --green: green;
+        --blue: #02173f;
+        --yellow: yellow;
+      }
+      * {
+        font-family: "Oswald", sans-serif;
+        margin: 0;
+  padding: 0;
+     
+      }
+
+      h2 {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      /* For WebKit-based browsers */
+::-webkit-scrollbar {
+    width: 12px; /* Set the width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Set the background color of the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: rgba(76, 157, 207, 0.705); /* Set the color of the scrollbar handle */
+    border-radius: 6px; /* Set the border radius of the handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #115fa8; /* Set the color of the handle on hover */
+}
+
+
+      /* Chat container styles */
+      #chat-container {
+        max-width: 80%;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        background: rgba(49, 118, 134, 0.422);
+        z-index: 1;
+        filter: none;
+        transition: 0.5s;
+        margin-top: 40px;
+      }
+
+      #chat-container.active {
+        margin-left: 240px;
+      }
+
+      /* Chat output styles */
+      #chat-output {
+        position: relative;
+        max-height: 300px;
+        overflow-y: auto;
+        margin-bottom: 10px;
+        border: 3px solid #ffffff;
+        border-radius: 10px;
+        padding: 10px;
+        filter: none;
+      }
+
+      .message {
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+      }
+
+      /* User message styles */
+      .user-message {
+        background-color: #3c76a9;
+        color: #fff;
+        text-align: right;
+        max-width: 50%;
+        padding: 8px;
+       justify-content: flex-end;
+        margin-left: auto;
+      }
+
+      .user-icon::before {
+        background-image: url('static/usericon1.png');
+  background-size: cover;
+  width: 35px; /* Adjust the width and height according to your image size */
+  height: 35px;
+  margin-left: 10px;
+  border-radius: 50%;
+  content: ''; /* Empty content, necessary for the pseudo-element to appear */
+  display: inline-block; /* Ensures the pseudo-element is inline and takes up space */
+      }
+
+      /* Bot message styles */
+      .bot-message {
+        background-color: #fff;
+        color: #000;
+        max-width: 50%;
+        padding: 8px;
+        justify-content: flex-start;
+        margin-right: auto;
+      }
+
+      .bot-icon::before {
+        background-image: url('static/boticon1.png');
+  background-size: cover;
+  width: 35px; /* Adjust the width and height according to your image size */
+  height: 35px;
+  margin-right: 10px;
+  border-radius: 50%;
+  content: ''; /* Empty content, necessary for the pseudo-element to appear */
+  display: inline-block; /* Ensures the pseudo-element is inline and takes up space */
+      }
+
+      /* User input and send button styles */
+      #user-input {
+        box-sizing: border-box;
+        font-family: inherit;
+        font-size: 14px;
+        vertical-align: baseline;
+        font-weight: 400;
+        line-height: 1.29;
+        letter-spacing: 0.16px;
+        border-radius: 0;
+        outline: 2px solid transparent;
+        outline-offset: -2px;
+        width: 100%;
+        height: 40px;
+        border: none;
+        border-bottom: 1px solid #8d8d8d;
+        background-color: #f4f4f4;
+        padding: 0 16px;
+        color: #161616;
+        transition: background-color 70ms cubic-bezier(0.2, 0, 0.38, 0.9),
+          outline 70ms cubic-bezier(0.2, 0, 0.38, 0.9);
+      }
+      #user-input:focus {
+        outline: 2px solid #0f62fe;
+        outline-offset: -2px;
+      }
+
+      #send-button {
+        margin-top: 20px;
+        display: inline-block;
+        outline: none;
+        cursor: pointer;
+        font-weight: 600;
+        border-radius: 3px;
+        padding: 12px 24px;
+        border: 0;
+        color: #fff;
+        background: #000a47;
+        line-height: 1.15;
+        font-size: 16px;
+        width: 100%;
+      }
+      #send-button:hover {
+        transition: all 0.1s ease;
+        box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
+      }
+
+      .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; 
+        filter: blur(5px); 
+        background-image: url(static/adubg.jpg); 
+        background-size: cover;
+      }
+
+      .open-button,
+      .close-button {
+        position: absolute;
+        margin-top: 2px;
+        top: 10px;
+        left: 10px;
+        z-index: 2;
+        background-color: var(--blue);
+        color: var(--white);
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+      }
+
+      #mySidebar{
+        box-shadow: 0 0 10px var(--black);
+        border: 1px solid var(--water);
+        background-color: var(--blue);
+        border-radius: 0 6px 0 0;
+        scrollbar-width: none;
+        overflow: hidden;
+        position: fixed;
+        margin-top: 2px;
+        height: 100%;
+        width: 0px;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        align-items: center;
+      }
+      #mySidebar.active{
+        margin-left: 240px;
+      }
+      .sidebar::-webkit-scrollbar {
+        display: none;
+      }
+      .sidebar a {
+        text-decoration: none;
+        color: var(--white);
+        padding: 5px;
+      }
+      .sidebar-logo img {
+        max-width: 180px; 
+        height: auto;
+        margin-top: 30px;
+      }
+      .sidebar-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+      }
+  
+      .typing-animation {
+  position: absolute;
+  visibility: visible;
+}
+
+.header{
+  width: 100%;
+  height: 45px;
+  background-color: #003366;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+}
+hr {
+  display: block;
+  width: 200px;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:#526D82;
+  border-width:3px;
+}
+    </style>
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="header"> 
+    <button class="toggle-button" onclick="toggleSidebar()" style="border: none; background: none; padding: 0; outline: none;">
+      <img src="{{ url_for('static', filename='adam.png') }}" alt="Logo" style="width: 35px; height: 35px; margin-top: 3px; margin-left: 5px; border-radius: 50%; border: 2px solid white;" />
+    </button> 
+    <h2 style=" font-size: 20px; margin-top: 5px;">AdU - Guide N' Go!</h2>
+    </div>
+    <aside class="sidebar" id="mySidebar">
+      <div class="sidebar-logo">
+        <img id="toggle-icon" src="{{ url_for('static', filename='boticon2.png') }}" alt="Logo" />
+      </div>
+      <hr>
+      <div class="sidebar-links">
+        <div class="spacer"></div>
+        <a class="list-item" href="/"><i><box-icon color="var(--white)" name="line-chart"></box-icon></i>Chat with Adam</a>
+        <a class="list-item" href="/map"><i><box-icon color="var(--white)" name="line-chart"></box-icon></i>Campus Maps</a>
+        <a class="list-item" href="/prayer"><i><box-icon color="var(--white)" name="line-chart"></box-icon></i>Adamsonian Prayer</a>
+        <br>
+        <hr>
+        <br>
+        <a class="list-item" onclick="activateListItem(this)" href="https://www.adamson.edu.ph/2018/"><i><box-icon color="var(--white)" name="dashboard" type="solid"></box-icon></i>Adamson Website</a>
+        <a class="list-item" onclick="activateListItem(this)" href="https://live.adamson.edu.ph"><i><box-icon color="var(--white)" name="dashboard" type="solid"></box-icon></i>Adamson Live</a>
+        <a class="list-item" onclick="activateListItem(this)" href="https://learn.adamson.edu.ph/V4/"><i><box-icon color="var(--white)" name="dashboard" type="solid"></box-icon></i>Learning Management System</a>
+        <a class="list-item" onclick="activateListItem(this)" href="https://adamson.blackboard.com"><i><box-icon color="var(--white)" name="line-chart"></box-icon></i>Blackboard Learn</a>
+      </div>
+    </aside>
+
+
+    <div id="chat-container" class="blurry-gradient">
+      <div id="chat-output">
+        <!-- Existing bot message -->
+        <div class="message bot-message">
+          <i class="far fa-user-circle bot-icon"></i>
+          Hello! How can I assist you today?
+        </div>
+      </div>
+      <!-- User input and send button -->
+      <input
+        type="text"
+        id="user-input"
+        placeholder="Type your message..."
+        autocomplete="off"
+      />
+      <button id="send-button">Send</button>
+    </div>
+    <script>
+    
+      function toggleSidebar() {
+        var sidebar = document.getElementById("mySidebar");
+        var chatContainer = document.getElementById("chat-container");
+        var toggleButton = document.querySelector(".toggle-button");
+        var pageContent = document.querySelector(".page-content");
+    
+        if (sidebar.style.width === "240px") {
+          sidebar.style.display = "none";
+          sidebar.style.width = "0";
+          chatContainer.style.marginLeft = "auto";
+          toggleIcon.src = "{{ url_for('static', filename='adam.png') }}";
+          pageContent.style.marginLeft = "0";
+        } else {
+          sidebar.style.display = "flex";
+          sidebar.style.width = "240px";
+          chatContainer.style.marginLeft = "250px";
+          toggleIcon.src = "{{ url_for('static', filename='adam.png') }}";
+          pageContent.style.marginLeft = "240px";
+        }
+      }
+    
+      document.addEventListener("DOMContentLoaded", function () {
+  const chatContainer = document.getElementById("chat-container");
+  const chatOutput = document.getElementById("chat-output");
+  const userInput = document.getElementById("user-input");
+  const sendButton = document.getElementById("send-button");
+  const userSound = document.getElementById("userSound");
+  const botSound = document.getElementById("botSound");
+  const typingElement = document.getElementById("typing");
+
+  sendButton.addEventListener("click", function () {
+    sendMessage();
+  });
+
+  userInput.addEventListener("keypress", function (e) {
+    if (e.key === "Enter") {
+      sendMessage();
+    }
+  });
+
+  function sendMessage() {
+  const userMessage = userInput.value;
+  if (!userMessage) return;
+
+  // Append the user's message to the chat
+  chatOutput.innerHTML += `<div class="message user-message">
+    ${userMessage}
+    <i class="far fa-user user-icon"></i>
+  </div>`;
+  userInput.value = "";
+  userSound.play(); // Play user message audio
+
+  // Show typing animation within the bot's response
+  chatOutput.innerHTML += `<div class="message bot-message">
+      <i class="far fa-user-circle bot-icon"></i>
+      
+      <div class="typing-animation" style="visibility: visible;">
+        <img src="/static/typingnow.gif" style="width: 70px; height: 44px; margin-left: 40px; padding: 4px;">
+      </div>
+  </div>`;
+
+  // Add a delay (response time) before displaying the bot's actual response
+  setTimeout(function () {
+    // Send the user's message to the server and get the bot's response
+    fetch("/get_response", {
+      method: "POST",
+      body: new URLSearchParams({ user_message: userMessage }),
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        const botResponse = data.bot_response;
+
+        // Remove the "Typing..." message
+        const typingMessage = document.querySelector('.message.bot-message:last-child');
+        if (typingMessage) {
+          typingMessage.innerHTML = `<i class="far fa-user-circle bot-icon"></i>${botResponse}`;
+        } else {
+          // If there is no typing message, append the bot's response to the chat
+          chatOutput.innerHTML += `<div class="message bot-message">
+            <i class="far fa-user-circle bot-icon"></i>
+            ${botResponse}
+          </div>`;
+        }
+
+        botSound.play(); // Play bot message audio
+      });
+  }, 1500); // Adjust the delay duration in milliseconds (e.g., 1500 for 1.5 seconds)
+}
+
+});
+
+    </script>    
+  </body>
+</html>

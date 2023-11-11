@@ -1,0 +1,1198 @@
+{
+"intents": [
+{
+    "tag": "Greeting",
+    "patterns": 
+    [
+    "Hi",
+    "Hello",
+    "Hey",
+    "What's up?"
+    ],
+    "responses": 
+    [
+    "Hi!",
+    "Hello!",
+    "Hey there, klasmeyt!",
+    "What's up, klasmeyt?"
+    ]
+},
+{
+    "tag": "Conclusion",
+    "patterns": 
+    [
+    "That's all.",
+    "Thanks",
+    "Thank you",
+    "I see"
+    ],
+    "responses": 
+    [
+    "I hope I answered all of your inquiries. If there's anything else, please feel free to ask me anytime, klasmeyt.",
+    "I hope the answers that I provided are satisfactory. If you need to learn more, please, ask away klasmeyt!",
+    "Thanks as well, klasmeyt!"
+    ]
+}, 
+{
+    "tag": "Time",
+    "patterns": 
+    [
+    "What time is it?",
+    "What's the time?",
+    "Can you tell me what time it is?"
+    ],
+    "responses": 
+    [
+    "getTIME"
+    ]
+},
+{
+    "tag": "Date",
+    "patterns": 
+    [
+    "What is the date today?",
+    "What's the date?",
+    "Can you tell me what date it is?"
+    ],
+    "responses": 
+    [
+    "getDATE"
+    ]
+},          
+{
+    "tag": "History",
+    "patterns": 
+    [
+    "What is the history of Adamson University?",
+    "Tell me about the history of Adamson University",
+    "What's the history of Adamson?",
+    "What's adu's history?",
+    "What's the origin of adamson university?"
+    ],
+    "responses": 
+    [
+    "Dr. George Lucas Adamson, a Greek Chemist from Athens, founded the Adamson School of Industrial Chemistry (ASIC) on June 20, 1932 to train young men and women along the lines of practical industrial chemistry. It started as a one-classroom school that evolved into the Adamson School of Industrial Chemistry and Engineering (ASICE) on February 19, 1936. Upon approval by the Secretary of Public Instruction of its application for university status on February 5, 1941, it became known as Adamson University (AdU).",
+    "The Adamson School of Industrial Chemistry (ASIC) was established on June 20, 1932, by Greek scientist Dr. George Lucas Adamson of Athens with the goal of educating youth in the field of applied industrial chemistry. On February 19, 1936, it began as a one-room school and changed its name to the Adamson School of Industrial Chemistry and Engineering (ASICE). It was given the name Adamson University (AdU) on February 5, 1941, when the Secretary of Public Instruction granted its request for university status.",
+    "On June 20, 1932, Dr. George Lucas Adamson, a Greek chemist from Athens, established the Adamson School of Industrial Chemistry (ASIC) with the goal of educating young people in the field of applied industrial chemistry. On February 19, 1936, it began as a one-room school and changed its name to the Adamson School of Industrial Chemistry and Engineering (ASICE). It was given the name Adamson University (AdU) on February 5, 1941, when the Secretary of Public Instruction granted its request for university status."
+    ]
+ },
+ {
+    "tag": "Vision and Mission",
+    "patterns": 
+    [
+    "What is the vision and mission of Adamson University?",
+    "What is the mission and vison of Adamson University?",
+    "What's adu's vision and mission?",
+    "What's adu's mission and vision?",
+    "Tell me about adu's vision and mission"
+    ],
+    "responses": 
+    [
+    "<b>Mission:</b> As a Catholic University, we diligently pursue truth and knowledge, inspired by Gospel values and guided by the teachings of the Church.<br><br>As a Vincentian Community, we inspire others to follow the example of St. Vincent de Paul, who led and organized his contemporaries in creatively responding to those who are in need<br><br>As an institution of learning, we Assist in the formation of competent, creative, and socially responsible leaders through our commitment to excellence in discovery, learning, and service<br><br>As a catalyst of social transformation, we provide quality services that empower others to become agents of change.<br><br><b>Vision:</b> Adamson University, a Catholic, Vincentian educational institution, is a recognized leading center for quality education particularly for the socially disadvantaged.",
+    "Vision and Mission of Adamson University<br><br><b>Mission:</b> As a Catholic University, we diligently pursue truth and knowledge, inspired by Gospel values and guided by the teachings of the Church.<br><br>As a Vincentian Community, we inspire others to follow the example of St. Vincent de Paul, who led and organized his contemporaries in creatively responding to those who are in need<br><br>As an institution of learning, we Assist in the formation of competent, creative, and socially responsible leaders through our commitment to excellence in discovery, learning, and service<br><br>As a catalyst of social transformation, we provide quality services that empower others to become agents of change.<br><br><b>Vision:</b> Adamson University, a Catholic, Vincentian educational institution, is a recognized leading center for quality education particularly for the socially disadvantaged.",
+    "Thank you for asking, Here is the Vision and Mission of Adamson University:<br><br><b>Mission:</b> As a Catholic University, we diligently pursue truth and knowledge, inspired by Gospel values and guided by the teachings of the Church.<br><br>As a Vincentian Community, we inspire others to follow the example of St. Vincent de Paul, who led and organized his contemporaries in creatively responding to those who are in need<br><br>As an institution of learning, we Assist in the formation of competent, creative, and socially responsible leaders through our commitment to excellence in discovery, learning, and service<br><br>As a catalyst of social transformation, we provide quality services that empower others to become agents of change.<br><br><b>Vision:</b> Adamson University, a Catholic, Vincentian educational institution, is a recognized leading center for quality education particularly for the socially disadvantaged."
+    ]
+},
+{
+    "tag": "Saint Vincent de Paul",
+    "patterns": 
+    [
+    "Who is Saint Vincent de Paul?",
+    "Who's Saint Vincent de Paul?",
+    "Tell me about Saint Vincent de Paul.",
+    "What should i know about Saint Vincent de Paul?",
+    "I wanna know about Saint Vincent de Paul"
+    ],
+    "responses": 
+    [
+    "Saint Vincent de Paul was born at Pouy in Gascony Southern France in 1581. He came from a poor family of peasants and spent his early years taking care of swine. A rich benefactor sent him to school. At the age of 19, he was ordained priest.<br><br>He had a rather self-seeking start in the priesthood. Under the influence of his spiritual directors, he underwent a striking conversation in which he gave his life over to God in service of the poor. For a few years, he was pastor of a parish and then a chaplain to the galley slaves in Paris. But it was in preaching missions and teaching the peasants in the country side that he found his special calling. He gathered a group of priests who assisted him in conducting missions. The group subsequently became the Congregation of the Mission (1625), a community of priests and brothers whose end is 'to preach the good news to the poor.'<br><br>Eager to reform the life and training of the clergy, he and his community also organized retreats and established seminaries. In 1633 he gathered together a group of simple girls to minister to the sick poor with the assistance of St. Louise de Marillac. Today this community is known as the Daughters of Charity. He also established the Confraternities of Charity and the Ladies of Charity (lay organizations) to assist the poor.<br><br>When he died on September 27, 1660, all of Paris mourned for him. The Church honors St. Vincent on this day. He is known throughout the world today as the patron of all charitable associations. His spirituality lives on in hundreds of thousands of laymen and women, priests, sisters and brothers who follow in his footsteps.<br><br>On August 3, 1728, Pope Benedict XIII declared Vincent 'Blessed'. Pope Leo XII constituted him 'Universal Patron of Charity' on April 16, 1885. His life-size statue stands in St. Peter's Basilica in Rome.<br><br>St. Vincent de Paul is the Patron Saint of Adamson University. Inspired by his example, the Vincentian community at Adamson University is committed to provide education particularly to the socially disadvantaged. They believe that education is one of the best ways to develop the human person and to uplift the social condition of the marginalized sectors of society.",
+    "Saint Vincent de Paul has become known as the “The Apostle of Charity” and “Father of the Poor.” His contributions to the training of priests and organizing parish missions and other services for the poor shaped the Church's role in the modern world.",
+    "In 1581, Saint Vincent de Paul was born in Pouy, in the southern French region of Gascony. He was raised by pigs in his early years and hailed from a low-income family of peasants. A wealthy sponsor paid for his education. He was consecrated as a priest at the age of 19. His priestly career started off quite self-serving. He had a profound talk with his spiritual guides and committed his life to serving the impoverished, giving his life to God. He served as a parish priest for a few years before becoming a chaplain to the Parisian galley slaves. However, he discovered his unique calling while preaching at missions and teaching the rural peasants. "
+    ]
+},
+{
+    "tag": "Core Values",
+    "patterns": 
+    [
+    "What are the core values of Adamson University?",
+    "What's AdU's core values?",
+    "Tell me about adamson univerity's core values",
+    "I want to know about the core values",
+    "List the core values of the university"
+    ],
+    "responses": 
+    [
+    "We pursue our vision and accomplish our mission from the following fundamental values that are at the heart of who we are:<br><br><b>SEARCH FOR EXCELLENCE</b> - The highest standards of academic excellence and professionalism in service are the hallmarks of our educative endeavors. We regularly assess and transform our programs to make them effective for learning discovery of knowledge and community service. Our service ethics manifests strong sense of responsibility, competency, efficiency and professional conduct.<br><br><b>SPIRIT OF ST. VINCENT DE PAUL</b> - The spirit of St. Vincent inspires and permeates our learning community, programs and services. This spirit is shown in our sensitivity to the presence of God, compassionate service and the building of supportive relationships towards an effective service to persons in need.<br><br><b>SOLIDARITY</b> - Drawn together by a common vision and mission, we believe education is a shared responsibility and a collaborative effort where the gifts of persons are valued. Our learning community is a 'family' where participation, teamwork, interdependence, communication anddialogueprevail.A culture of appreciation builds up our community, encouraging us towards excellence and professionalism.<br><br><b>SOCIAL RESPONSIBILITY</b> - Education at Adamson University aims at developing a senseofsocial responsibility - a mark of an authentic Christian faith. Social responsibility leads us to empower the marginalized sectors of society through the creation of knowledge and human development. We are committed to work for the building of a society based on justice, peace, and respect for human dignity and the integrity ofcreation.<br><br><b>SUSTAINED INTEGRAL DEVELOPMENT</b> - Education is a lifelong quest whose primary purpose is the full and integral development of the human person. We are committed to provide programs forholistic development and continuous learning. Networking with other educational institutions, government agencies, industries, business and other groups enhance our educational services.",
+    "We aim for excellence by maintaining high standards of academic quality and professionalism. We continuously evaluate and enhance our programs to ensure effective learning, knowledge discovery, and community service. <br>The spirit of St. Vincent de Paul inspires our learning community, emphasizing our commitment to compassionate service, building supportive relationships, and recognizing the presence of God. <br>We promote solidarity through shared responsibility and collaboration, valuing the diverse gifts of our community members. Our family culture encourages teamwork, interdependence, communication, and appreciation, fostering excellence and professionalism. <br>Our education instills a sense of social responsibility, empowering us to serve marginalized communities, promote justice, peace, and human dignity, and contribute to the betterment of society. <br>Education at Adamson University is a lifelong journey focused on holistic development and continuous learning, achieved through partnerships with other institutions and organizations.",
+    "Our institution's core values underpin our vision and mission:<br><br>We are dedicated to excellence, maintaining high standards in academics and service. We adapt and enhance our programs to ensure effective learning, knowledge discovery, and community service, guided by a strong sense of responsibility and professionalism. <br> The spirit of St. Vincent de Paul is ingrained in our learning community, fostering compassionate service, supportive relationships, and a deep sense of spirituality. <br>Solidarity unites us as a family, promoting teamwork, interdependence, and a culture of appreciation. Together, we strive for excellence and professionalism in our endeavors. <br>Social responsibility is integral to our education, motivating us to empower marginalized communities, champion justice, peace, and human dignity, and contribute to the betterment of society. <br>We are committed to sustained integral development, offering programs for lifelong learning and holistic growth while collaborating with various institutions and organizations."
+    ]
+},
+{
+    "tag": "Attributes of a true Adamsonian",
+    "patterns": 
+    [
+    "What are the attributes that define a true adamsonian?",
+    "what attributes define a true adamsonian?",
+    "What defines an ideal Adamsonian?",
+    "Tell me about the attributes of a true Adamsonian"
+    ],
+    "responses": 
+    [
+    "COMPETENCE<br><br>Creative and Critical thinking - A critical and creative thinker who can define, identify and evaluate problem in the workplace and can innovate, create and formulate solutions to problems, and advance knowledge.<br><br>Fluency and articulateness - Articulate in the local and global language in both oral and written forms.<br><br>Expertise and life- long learning - A person who has mastery and in-depth understanding of his/her field of specialization and is a life-long independent learner who is keen on continuing self-improvement.<br><br>Technology savviness - Able to put into good use the many tools, techniques, technology and equipment needed or appropriate to one's specific discipline.<br><br>Theory and practice - Able to apply theory to practice and impart and implant their expertise among upcoming practitioners and professionals.<br><br>CHARACTER<br><br>Leadership and network - Well-equipped with strong leadership and networking qualities and skills.<br><br>Adamsonian identity and integrity - A person who has a sense of identity and pride and an unwavering loyalty to one's Alma Mater and who has integrity and ethical uprightness.<br><br>Commitment to social transformation - An agent of social transformation and community development<br><br>Patriotism and universal outlook - A person who possesses a universal outlook and respects cultural diversity yet proud of his ethnicity and nationality and ready to help bring his/her country to progress<br><br>Care for the environment - A person who has special concern for the environment and great respect for creation.<br><br>CHARITY<br><br>Faith in God - Always in pursuit of truth according to the Catholic tradition but always respectful of other faith traditions; faithful in the practice of religion and has an active relationship with God that makes him/her bear witness to his/her faith and to share it with others.<br><br>Spirit of St. Vincent de Paul - Inspired by the example of St. Vincent de Paul and in solidarity with the poor, he commits himself/herself to use his/her talents to serve others following the Vincentian approach to social development."
+    ]
+},
+{
+    "tag": "University Seal",
+    "patterns": 
+    [
+    "What's the meaning of the University Seal?",
+    "What does the University Seal stand for?",
+    "Tell me about Adamson University's University Seal"
+    ],
+    "responses": 
+    [
+    "The University Seal embodies the ideal, the commitments, and the aspirations of Adamson University.<br><br>The central circle bears the figure of Athena, half-circled by three white fleur-de-lis flowers, against a background of blue. Athena, the Greek goddess of wisdom, symbolizes the origin of the University - founded by Dr. George Lucas Adamson, who was assisted by his cousins, Alexander Athos Adamson and George Athos Adamson, all Greeks - and the University's zeal in its quest for knowledge.<br><br>The first fleur-de-lis represents Mary in Her Immaculate Conception, the Patroness of the Philippines, to whom the University professes homage and devotion, and on whose feast day, December 8, the Adamson Ozanam Educational Institutions, Inc. was approved by the Securities and Exchange Commission.<br><br>The second fleur-de-lis stands for St. Vincent de Paul, founder of the Vincentians who direct the University, and for Frederick Ozanam, founder of the Society of St. Vincent de Paul. The University is placed under the patronage of St. Vincent so that his life may inspire the students and instill in them the moral and social consciousness to help the poor and deprived.<br><br>The third fleur-de-lis alludes to the late Pope Paul VI during whose pontificate the University was transformed from secular to Catholic. He had fleur-de-lis in his coat arms.<br><br>The Latin motto Veritas in Caritate (Truth in Charity) speaks the University's commitment to human development, especially of the poor and the working man.<br><br>The University colors are blue and white, the same colors adopted by its founder."
+    ]
+},
+{
+    "tag": "University Governance",
+    "patterns": 
+    [
+    "What is Adamson's University Governance?",
+    "What's adu's university governance?",
+    "Tell me about the University Governance"
+    ],
+    "responses": 
+    [
+    "Adamson University is a Catholic learning institution owned and managed by Vincentian priests and brothers. As an educational apostolate of the Congregation of the Mission, the University, consistent to its doctrinal purpose, seeks to cater to the socially disadvantaged students.<br><br>In the entire stay of the students in the University, it is expected that the academic, co-academic and extra-curricular activities will form them to individuals, whose ideals are reflective of the values needed in the academic community, and the whole nation. Student services are readily available to complement the conduct of a foresaid activities in accordance with the established policies aimed at maintaining the academic standards of the University.<br><br>Enrollment of the student is viewed as a special contract indicative of his acceptance to the University rules and regulations set for thin this Student Manual, pursuant with the role of the University, namely: character formation, discipline, developmental growth and Vincentian education."
+    ]
+},
+{
+    "tag": "Accreditation",
+    "patterns": 
+    [
+    "What are the accreditations of Adamson University?",
+    "Tell me about the accreditations held by Adamson University.",
+    "Which national and international educational organizations accredit Adamson University?"
+    ],
+    "responses": 
+    [
+    "Adamson University is an accredited member of the following national and international educational organizations:<br><br>Association of Southeast and East Asian Catholic Colleges and Universities (ASEACCU)<br>Association of Southeast Asian Institutions of Higher Learning (ASAIHL)<br>Philippine Association of Colleges and Universities (PACU)<br>Catholic Educational Association of the Philippines (CEAP)<br>Association of Catholic Universities of the Philippines (ACUP)<br>Philippine Association of Colleges and Universities Commission on Accreditation (PACUCOA)<br>The Federation of Accrediting Agencies of the Philippines (FAAP)<br>Philippine Accrediting Association of Schools, Colleges and Universities (PAASCU)<br>South Manila Educational Consortium (SMEC)<br>University Belt (U-Belt) Consortium<br>Philippine Technological Council (PTC)<br>Philippine Association of Engineering Schools (PAES)<br><br>Moreover, Adamson University is affiliated with or is an institutional member of several other international and national professional associations and organizations."
+    ]
+},
+{
+    "tag": "College Programs",
+    "patterns": 
+    [
+    "What academic programs does Adamson University offer?",
+    "Can you list the courses at Adamson University?",
+    "Tell me about the available programs at Adamson University."
+    ],
+    "responses": 
+    [
+    "== College of Graduate School Programs ==<br><br>Doctor of Philosophy in Education (Educational Leadership)<br>Doctor of Philosophy in Management<br>Master of Arts in Education<br>Master of Arts in Psychology<br>Master of Science in Pharmacy<br>Master in Information Technology<br>Master in Business Administration<br>Master of Engineering (Civil Engineering, Chemical Engineering, Computer Engineering, Electrical Engineering, Electronics Engineering, Industrial Engineering, Mechanical Engineering)<br>Master of Science in Biology<br>Master of Science in Chemistry<br>Master in Construction Management<br>Master of Management Engineering<br>Master of Arts in Communication<br>== St. Vincent School of Theology Programs ==<br><br>Doctor of Philosophy in Theology<br>Master of Arts in Theology (Biblical Studies, Moral Studies, Liturgical Studies, Systematic Studies, Vincentian Studies)<br>Master in Pastoral Ministry (Non-Thesis)<br>== College of Law Program ==<br><br>Bachelor of Laws<br>== College of Architecture Program ==<br><br>Bachelor of Science in Architecture<br>== College of Business Administration Programs ==<br><br>Bachelor of Science in Accountancy<br>Bachelor of Science in Accounting Technology<br>Bachelor of Science in Customs Administration<br>Bachelor of Science in Hospitality Management<br>Bachelor of Science in Real Estate Management<br>Bachelor of Science in Business Administration Major in Financial Management, Business Economics, Marketing Management, Operations Management<br>== College of Education and Liberal Arts Programs ==<br><br>Bachelor of Elementary Education<br>Bachelor of Special Needs Education (Elementary School Education)<br>Bachelor of Secondary Education Major in English, MAPEH<br>Bachelor of Physical Education<br>Bachelor of Science in Exercise and Sports Major in Fitness and Sports Management<br>Bachelor of Arts in Communication<br>Bachelor of Arts in Philosophy<br>Bachelor of Arts in Political Science<br>Note: *Not offered effective S.Y. 2018- 2019<br><br>== College of Engineering Programs ==<br><br>Bachelor of Science in Chemical Engineering<br>Bachelor of Science in Chemical Process Technology<br>Bachelor of Science in Civil Engineering<br>Bachelor of Science in Computer Engineering<br>Bachelor of Science in Electrical Engineering<br>Bachelor of Science in Electronics Engineering<br>Bachelor of Science in Geology<br>Bachelor of Science in Industrial Engineering<br>Bachelor of Science in Mechanical Engineering<br>Bachelor of Science in Mechanical Engineering Major in Mechatronics (dual degree)<br>Mining Engineering<br>Petroleum Engineering<br>== College of Nursing ==<br><br>Bachelor of Science in Nursing<br>== College of Pharmacy Programs ==<br><br>Bachelor of Science in Pharmacy<br>Bachelor of Science in Clinical Pharmacy<br>== College of Science Programs ==<br><br>Bachelor of Science in Biology<br>Bachelor of Science in Chemistry<br>Bachelor of Science in Computer Science<br>Bachelor of Science in Information Technology<br>Bachelor of Science in Information System<br>Bachelor of Science in Psychology<br>Associate in Computer Technology (2-year course)<br>== Basic Education Programs ==<br><br>Pre-School<br>Grade School<br>Junior High School<br>Senior High School"
+    ]
+},
+{
+    "tag": "Admission Requirements and Enrollment Procedures",
+    "patterns": 
+    [
+    "What are the admission requirements and enrollment procedures at Adamson University?",
+    "How can I get admitted to Adamson University?",
+    "Explain the admission requirements and enrollment process."
+    ],
+    "responses": 
+    [
+    "The University through the Admissions and Student Recruitment Office and the Office of the Registrar in collaboration with the Office of the Vice President for Academic Affairs (OVPAA) and the Institutional Planning and Development Office (IPPDO) is responsible for the development and oversight of a strategy to attract gifted, talented, and creative students to partake of and share with the Vincentian education through the various academic programs of the University. Thus, the following admission requirements, policies and procedures have been set: (ask about the 'objective/scope of admission requirements to learn more.')"
+    ]
+},
+{
+    "tag": "Objective of Admission Requirements",
+    "patterns": 
+    [
+    "What is the objective of admission requirements?",
+    "what's the objective of admission requirements?",
+    "Tell me about the objective of admission requirements"
+    ],
+    "responses": 
+    [
+    "In offering admission to prospective student, the goal is to educate and produce students who will be eligible in learning of a certain program. It is the ways wherein the students obtain a university degree that allow them to fully appreciate and understand the program and attain the appropriate career that could widen, develop and contribute meaningfully to themselves and the society. In doing so, this policy define the admission requirements of incoming students."
+    ]
+},
+{
+    "tag": "Scope of Admission Requirements",
+    "patterns": 
+    [
+    "What is the scope of admission requirements?",
+    "what's the scope of admission requirements?",
+    "Tell me about the scope of admission requirements"
+    ],
+    "responses": 
+    [
+    "This process defines the admission requirements and procedures of freshmen, transferees, foreign students, old students, and returning students. The incoming freshmen students shall be accepted regardless of sex, nationality, religious beliefs, socio-economic status, or political affiliation provided he/she graduated from any recognized senior high schools and must meet all the prescribed admission requirements of Adamson University."
+    ]
+},
+{
+    "tag": "Online Application for University Entrance Examination (UEE)",
+    "patterns": 
+    [
+    "How to apply for online university examination?",
+    "Where to apply for adu's online university examination?",
+    "Tell me about the university entrance examination",
+    "University entrance examination page"
+    ],
+    "responses": 
+    [
+    "Type in the internet browser's address bar https://www.adamson.edu.ph/uee/ for online application.",
+    "Enter https://www.adamson.edu.ph/uee/ into your browser's address bar to access the online application.",
+    "Visit https://www.adamson.edu.ph/uee for the online application and please check for announcements on when the online application is available."
+    ]
+},
+{
+    "tag": "Enrollment for Freshmen",
+    "patterns": 
+    [
+    "How to enroll as a freshmen?",
+    "What's the enrollment procedure for freshmen students?",
+    "Tell me about the enrollment procedures for freshmen students"
+    ],
+    "responses": 
+    [
+    "The enrollment procedure for freshmen involves applying and passing the University Entrance Exam (UEE), submitting required documents, attending an interview, paying fees, and more."
+    ]
+},
+{
+    "tag": "Enrollment for Old Students",
+    "patterns": 
+    [
+    "How to enroll as an old student?",
+    "What's the enrollment procedure for old students?",
+    "Tell me about the enrollment procedures for old students"
+    ],
+    "responses": 
+    [
+    "Print or view the pre-advised subjects in Learning Management System (LMS) or e-Learning, then pay at the cash management office or any accredited banks or bayad center, then print your certificate of enrollment."
+    ]
+},
+{
+    "tag": "Enrollment for Transferees",
+    "patterns": 
+    [
+    "How to enroll as a transferee?",
+    "What's the enrollment procedure for transferees?",
+    "Tell me about the enrollment procedures for transferees."
+    ],
+    "responses": 
+    [
+    "Print or view the pre-advised subjects in Learning Management System (LMS) or e-Learning, then pay at the cash management office or any accredited banks or bayad center, then choose subject/s online, then print your certificate of enrollment."
+    ]
+},
+{
+    "tag": "Enrollment for Nonresident Students",
+    "patterns": 
+    [
+    "How to enroll as a nonresident student?",
+    "What's the enrollment procedure for nonresident students?",
+    "Tell me about the enrollment procedures for nonresident students"
+    ],
+    "responses": 
+    [
+    "<b>Non-Consortium School Requirements:</b><br>2pcs. 2x2 ID picture<br> Permit to Cross Enroll<br>Certificate of Good Moral Character<br><br>Consortium School Requirements:<br>2pcs. 2x2 ID picture<br>Permit to Cross Enroll."
+    ]
+},
+{
+    "tag": "Enrollment for International Students",
+    "patterns": 
+    [
+    "How to enroll as an international student?",
+    "What's the enrollment procedure for international students?",
+    "Tell me about the enrollment procedures for international students"
+    ],
+    "responses": 
+    [
+    "Refer to the UEE section for online application - and to the handbook's article II section 8 for the complete details."
+    ]
+},
+{
+    "tag": "Student Information Sheet",
+    "patterns": 
+    [
+    "What is a student information sheet?",
+    "What's a student information sheet?",
+    "Tell me about the student information sheet"
+    ],
+    "responses": 
+    [
+    "Every Freshmen and Transferee student must accomplish Student Information Sheet the moment they enroll in this institution. They voluntarily and willfully agree to give their personal data in accordance with the Data Privacy Act of 2012 or R.A 10173 to be processed by the Admission Office. The encoded data shall form part of the permanent record of the student and cannot be amended or modified unless there is proof/document that will support the changes."
+    ]
+},
+{
+    "tag": "Letter of Undertaking",
+    "patterns": 
+    [
+    "What is a letter of undertaking?",
+    "What's a letter of undertaking?",
+    "Tell me about the letter of undertaking"
+    ],
+    "responses": 
+    [
+    "There shall be a letter of undertaking form to be accomplished by freshmen or transferee student who has a deficiency in his/her requirements. The deficient student should execute a letter of undertaking using the LOU Form the admissions office indicating therein the date of submission and the effect for non-compliance."
+    ]
+},
+{
+    "tag": "Withdrawal of credentials and enrollment",
+    "patterns": 
+    [
+    "How can i withdraw my credentials and enrollment?",
+    "What are the procedures for withdrawal of credentials and enrollment",
+    "Tell me about withdrawal of credentials and enrollment"
+    ],
+    "responses": 
+    [
+    "To withdraw enrollment, students must accomplish the request for withdrawal of credentials and cancellation of enrollment. Refund rules apply based on the timing of withdrawal."
+    ]
+},
+{
+    "tag": "Classification of students",
+    "patterns": 
+    [
+    "How are students classified?",
+    "What's the basis for classification of students?",
+    "Tell me about the classification of students"
+    ],
+    "responses": 
+    [
+    "Students are classified by curriculum year based on the number of credits already earned and in accordance with the curriculum standards where students are enrolled. Students with more than 75% academic load of regular load in the curriculum shall be classified as full-time students while students with less than 75% academic load shall be classified as part-time students."
+    ]
+},
+{
+    "tag": "Probitionary Status",
+    "patterns": 
+    [
+    "What is probitionary status?",
+    "What's probitionary status?",
+    "Tell me about probitionary status"
+    ],
+    "responses": 
+    [
+    "Probationary status is given to a student who has an academic deficiency of 30% or more of  enrolled academic units at the end of a given semester. Grades of 5.0 (Failed), 6.0 (Dropped), or 0.0 (No Grade) are included in the determination of academic deficiency."
+    ]
+},
+{
+    "tag": "Academic Exclusion",
+    "patterns": 
+    [
+    "What are the terms for academic exclusion?",
+    "How is academic exclusion determined?",
+    "Tell me about academic exclusion"
+    ],
+    "responses": 
+    [
+    "A student on probation who does not pass all previously failed subjects, or who was unable to clear his/her probationary status within the required period granted, shall be excluded from enrollment in his/her program or from the University."
+    ]
+},
+{
+    "tag": "Residency",
+    "patterns": 
+    [
+    "What are the terms stated for residency?",
+    "What's the rules for residency?",
+    "Tell me about residency"
+    ],
+    "responses": 
+    [
+    "4.1 On special circumstances, a student may be allowed to continue in his her program beyond the Maximum Allowable Residence (MAR) provided he/she takes one (1) major course per semester of extension.<br><br>4.2 For Undergraduates, the Maximum Allowable Residence (MAR) shall be equal to the required number of years to complete the course multiplied by 1.5"
+    ]
+},
+{
+    "tag": "Leave of Absence",
+    "patterns": 
+    [
+    "What happens if i file for leave of absence?",
+    "What are the rules for leave of absence?",
+    "Tell me about leave of absence"
+    ],
+    "responses": 
+    [
+    "A student who does not intend to enroll during the following semester is required to file a Leave of Absence at the Registrar's Office. The application for Leave of Absence shall indicate the reasons for the leave, the intended duration and a declaration that the student shall not enroll in any other school for the duration of the leave. Failure to file leave of absence shall have the following effects:<br><br>5.1 The period covered by the student's absence shall continue to be counted towards his/her Maximum Allowable Residence (MAR) which is equal to the required number of years to complete the course multiplied by 1.5. Official leave of absence shall not be included in the counting the years of residency.<br><br>5.2. If a new curriculum is implemented during his absence, he/she shall be required to follow the new curriculum if his/her absence extends more than two school years after the implementation of the new curriculum and the phase out of the old curriculum.<br>5.3 Students on Leave of Absence may be re-admitted by the Registrar upon recommendation of the Department Chairperson/Dean and subject of terms and conditions as may be imposed by the college."
+    ]
+},
+{
+    "tag": "Student Ranking",
+    "patterns": 
+    [
+    "What is student ranking?",
+    "How is the student ranking determined?",
+    "Tell me about student ranking"
+    ],
+    "responses": 
+    [
+    "A student is ranked according to the curriculum year and semester. <br><br>First year - First Semester<br>First year - Second Semester<br><br>Second year - First Semester<br>Second year - Second Semester<br><br>Third year - First Semester<br>Third year - Second Semester<br><br>Fourth year - First Semester<br>Fourth year - Second Semester<br><br>Fifth year - First Semester<br>Fifth year - Second Semester<br><br>Student must earn at least 70% of the total accumulated units offered up to the particular year and semester based on the curriculum."
+    ]
+},
+{
+    "tag": "Assessment of Fees",
+    "patterns": 
+    [
+    "What are the assessment of fees?",
+    "How are the assessment of fees determined?",
+    "Tell me about the assessment of fees"
+    ],
+    "responses": 
+    [
+    "Tuition and other school fees for the school year are posted on the Financial Affairs Department bulletin boards prior to and during the enrollment period.<br><br>The temporary assessment of tuition and other school fees is available at the E-Learning. Corrections and adjustments in enrollment should be done within one (1) week from the official start of classes at the Registrar's office. After this period, collections and adjustments in enrollment and in the computerized assessed fees shall be entertained anymore. <br><br>1.1. Graduation fees are included in the assessment of fees after submission of the Application for Graduation Form at the Registrar's Office. A graduating student is advised to fully settle his/her outstanding balance at the Teller's counter, Cash Management Office, before the examination period.<br><br>1.2 Pre-assessment of fees for some other purposes should be applied for in writing at the Students Accounts Section, Accounting Office for a fee."
+    ]
+},
+{
+    "tag": "Verification Terminals",
+    "patterns": 
+    [
+    "What are verification terminals?",
+    "What are the different verification terminals?",
+    "Tell me about verfication terminals"
+    ],
+    "responses": 
+    [
+    "The student can verify the account balance at the verification terminals located at Window A of the Financial Affairs Department, Students Accounts Section, and Accounting Office."
+    ]
+},
+{
+    "tag": "Tutorial Classes",
+    "patterns": 
+    [
+    "Does Adamson University offer tutorial classes?",
+    "What are tutorial classes?",
+    "Tell me about tutorial classes"
+    ],
+    "responses": 
+    [
+    "3.1 An off-semester subject with a class size of less than 30 students is considered tutorial classes. Deadline for petition to open tutorial classes and its approval is based on the prescribed period.<br><br>3.2 A student signing in a tutorial class petition form automatically enters into an agreement with his/her co-petitioners to share equally the additional (tutorial) fees to make up the 30 students to a class for a semester and midyear term.<br><br>3.3 The fewer the students, the greater is the tutorial fee. A tutorial class is expensive and the student is advised to inform his/her parents or guardian of the tutorial fee.<br><br>3.4 Students with tutorial course(s) should verify the additional fee in their e-Learning or with the Students Accounts Section to ensure encoding of grades.<br><br>The formula for computing the tutorial fee is:<br><br>Tutorial fee = (30 minus the actual number of students) x number of units x rate/unit divided by Actual number of students.<br>Regular Class Size<br>Undergraduate, Law School<br><br>Graduate School<br>PHD<br>MBA, MA in Education<br>MS ManE, MSChem<br>MEP,<br>MIT, <br>MSP<br><br>Minimum Class Size (Semester/Midyear)<br><br>Undergraduate - 30,<br>Law School 25<br>PHD - 12,<br>MBA, MA in Education - 15, <br>MS ManE, MSChem<br>MEP,<br>MIT, MSP"
+    ]
+},
+{
+    "tag": "Terms of Payment",
+    "patterns": 
+    [
+    "What are the terms of payment?",
+    "What's the terms of payment",
+    "Tell me about the terms of payment"
+    ],
+    "responses": 
+    [
+    "4.1 Cash Basis<br>A student paying the school fees in full before the start of classes (regular semesters only) enjoys five percent (5%) discount on tuition fees.<br><br>4.2 Installment Basis<br><br>4.2.1 Down payment, payable on or before enrollment, is about 25% of the total school fees based on the incoming freshmen rate.<br><br>4.2.2 The student is encouraged to settle the balance of school fees after the down payment either monthly or equally over the three (3) periodical exams: the prelim, midterm and final exams. The installment amount due should be settled before the examination period. Upon payment, the permit shall be issued to the student to take the exams. A STUDENT SHALL NOT BE ALLOWED TO TAKE THE EXAM IF HE/SHE DOES NOT HAVE THE PERMIT.<br><br>4.2.3 A student paying on installment basis who fails to pay the balance on the set deadline shall be allowed to complete the remainder of the term. However, he/she will not be allowed to enroll for the next semester. The transcript of records and transfer credentials shall be withheld until the balance is paid. In addition, a surcharge in accordance with the finance policies shall be imposed on the outstanding balance."
+    ]
+},
+{
+    "tag": "Modes of Payment",
+    "patterns": 
+    [
+    "What are the modes of payment?",
+    "What's the mode of payment?",
+    "Tell me about the modes of payment"
+    ],
+    "responses": 
+    [
+    "5.1 Over-the-teller counter payment at the Cash Management Office, Financial Affairs Department during office hours. The Cash Management Office is open from 7 a.m. to 5 pm., Monday to Friday and on Saturday (8 a.m. - 4 p.m.) prior to the prelim, mid-term and final examinations period to facilitate payment.<br><br>5.2 Over-the-counter payment is also accepted at BDO, PNB, China Bank Savings, BPI, and Bank of Commerce branches during banking hours. Accomplish two (2) copies of the bills payment slip. Write 'Adamson University' on the slot given for 'Company Name' and provide the student's full name, student number, and the amount to be paid.<br><br>5.3 For those who are depositors of PNB, BDO, China Bank Savings, BPI and BOC, payment can be made thru the internet banking, phone banking, and auto-debit facilities which the student can arrange at their maintaining bank branch by enrolling 'Adamson University' as a Merchant for bills payment.<br><br>5.4 BAYAD CENTER (at selected branches nationwide)<br><br>5.5 ATM (PNB)<br><br>5.5.1 A student can secure an ATM account with any branch of PNB. For the PNB UN Avenue Branch, there is a minimum deposit of Php500. Parents and students can pay school fees anytime and anywhere in the Philippines thru the ATM account. Parents can also send allowances to their students thru this account.<br><br>5.5.2 ATM terminals are provided by PNB and Bank of Commerce inside the university premises for the convenience of the students when withdrawing money. There are also ATM terminals of BPI and BDO at the SV Walkway.<br><br>5.6 OFW-Sponsored Payments<br><br>5.6.1 Students, whose parents/sponsors are overseas workers, can apply for the Overseas Remittance Program of the Philippine National Bank (PNB),and Banco De Oro (BDO) with Adamson University. The overseas parent/sponsor can remit the payment directly to the Adamson account thru the remittance program. Scanned copy of the validated remittance slip should be sent to Cash Management Office thru email or fax number (02)5235784.<br><br>5.7 Credit Card<br>a. VISA<br>b. MasterCard<br>c. JCB<br>d. Amex<br><br>Debit Card/ATM Card<br>a. Express Net<br>b. Megalink<br>c. Bancnet<br><br>5.8 Promissory Note (PN) As a matter of policy, students of Adamson University are required to make a down payment of at least Php10,000 during or before the enrollment period of the regular semester. The University also requires the students to settle the due installment on time.<br><br>5.8.1 On special cases, a qualified student who is unable to pay his/her due account may secure a promissory note (PN) from the Cash Management Office, Finance Department only once a semester.<br><br>5.8.2 The note may be secured by a post-dated check, which due date should not be beyond two (2) weeks after the examination period. The PN should be signed by a parent/guardian, if the student is not yet of legal age.It should be approved by the authorized signatory of the Finance Department.<br><br>5.8.3 The approved PN shall serve as a special permit.<br><br>5.8.4 Once a postdated check (PDC), intended for prelim exams, is dishonored on due date, the issuer/student is no longer allowed to issue a PDC. A service charge of Php500 shall be imposed for every dishonored check due to insufficient funds and Php1000 if the reason is due to closed amount.<br><br>5.8.5 Promissory Note is not allowed during the final exams. A student must settle his account in full. For a graduating student/transferee, there will be no release of transcript of records and other credentials until account is fully settled."
+    ]
+},
+{
+    "tag": "Discounts and Scholarships",
+    "patterns": 
+    [
+    "Does Adamson University offer scholarships?",
+    "Does Adamson University offer discounts?",
+    "Tell me about discounts and scholarships",
+    "Discounts and scholarships at Adamson University"
+    ],
+    "responses": 
+    [
+    "6.1 Discounts on tuition fees granted to CBA, academic and other scholars of the University shall be applied for every semester in accordance with existing policies.<br><br>6.2 For Outside-Sponsored Scholarships, the student presents the original copy of the proof of his scholarship to the Students Accounts Section, Accounting Office. The student is responsible for following up the update of his/her account with his/her sponsor or with Office for Student Assistance and Scholarships (OSAS), as the case maybe.<br><br>6.3 Discounts on tuition fees granted to siblings, as well as children of alumni should be applied for, during enrollment. However, the student can avail himself/herself only one (1) of the aforementioned discount even though he/she qualifies for both.<br><br>6.3.1 Application for discounts shall be filed at the Students Accounts Section, Accounting Office of the Finance Department based on the prescribed period.<br><br>6.3.2 The PSA issued birth certificate of the students shall be attached to the initial application form for siblings discount while alumni ID card of parent and the birth certificate of the student are required for alumnus child discount application.<br><br>6.3.3 The discount will be computed on the tuition fee after deducting the full payment discount, if the student paid the school fees in full before the start of classes.",
+    "Discounts on tuition fees for CBA, academic, and university scholars are applied each semester as per current policies. <br> Students with outside-sponsored scholarships should provide proof to the Accounting Office and are responsible for monitoring their account updates with their sponsor or OSAS. <br> During enrollment, students eligible for discounts as siblings or alumni children should apply, but they can choose only one of these discounts, not both. Required documents, such as birth certificates or alumni ID cards, need to be attached. <br> The discount is calculated on the tuition fee after deducting any full payment discount received before the commencement of classes.", 
+    "6.1 University discounts for CBA, academic, and other scholars are applied each semester following existing policies. <br> Students with outside-sponsored scholarships must provide proof to the Accounting Office and should monitor their account updates with their sponsor or the Office for Student Assistance and Scholarships (OSAS). <br> Discounts for siblings and alumni children must be applied during enrollment, with students eligible for only one of these discounts, not both. The application process includes attaching birth certificates or alumni ID cards as required. <br>The discount is calculated on the tuition fee after deducting any full payment discount received before classes start."
+    ]
+},
+{
+    "tag": "Charges and Refunds",
+    "patterns": 
+    [
+    "What are the charges and refunds?",
+    "Explain the terms for charges and refunds",
+    "Tell me something about charges and refunds",
+    "Charges and refunds details"
+    ],
+    "responses": 
+    [
+    "7.1 Claims for reminder are made according to the memorandum from the Commission on Higher Education (CHED).<br><br>7.1.1 If classes have already started, the student will be charged 25% and 50% of the total school fees if withdrawal of enrollment is within the first week and second week of classes, respectively, regardless of whether or not he/she has actually attended classes.<br><br>7.1.2 The student may be charged all school fees in full if he/she withdraws anytime after the second week of classes regardless of whether or not he/she has actually attended classes.<br><br>7.1.3 For withdrawal due to a justifiable reason such as prolonged illness and accident requiring hospitalization and the like, the charge is proportionate up to the month of notice of withdrawal, or up to the last attendance as determined by the approving officer. Presentation of supporting documents is required. (Example: medical certificate, hospital billing, and official receipts).<br><br>Note: Charges and Refund of amount paid due to withdrawal of enrollment prior to or during the enrollment period is allowed in accordance with the Finance Policies. For funds of excess payments, a processing fee will be charged to the student. Refunds of credit card payments are subject to bank's service charge.",
+    "Claims for refunds follow CHED guidelines. Withdrawal within the first week of classes incurs a 25% charge, and within the second week, a 50% charge, regardless of class attendance.  After the second week, full school fees are charged for withdrawals, regardless of attendance.Justifiable reasons like illness or hospitalization require proportionate charges up to the withdrawal notice month or last attendance, supported by documents.", 
+    "Refund claims are governed by CHED regulations. Within the first week of classes, withdrawal incurs a 25% charge, and within the second week, a 50% charge, regardless of class attendance. After the second week, full school fees are charged for withdrawals, whether or not classes were attended. Withdrawals for valid reasons, such as illness or hospitalization, have charges proportionate to the notice month or last attendance, supported by documentation."
+    ]
+},
+{
+    "tag": "Code of Adacemic Integrity",
+    "patterns": 
+    [
+    "What is the code of academic integrity?",
+    "What's adamson university's code of integrity?",
+    "Tell me about the code of academic integrity",
+    "Academic integrity details"
+    ],
+    "responses": 
+    [
+    "All persons involved in the educational programs and services of the university as students, teachers, researchers, staff, or academic administrators shall uphold honesty and integrity in their academic activities at all times. They shall avoid acts such as cheating, plagiarism, deceit, fabrication of facts and records, bribery, misrepresentation, and all acts of dishonesty. All academic departments and offices are expected to adopt measures to uphold the Code of Academic Integrity, especially in learning, teaching, and research.",
+    "In the university's educational programs and services, all individuals, whether students, educators, researchers, staff, or academic administrators, are obliged to uphold a standard of honesty and integrity in their academic pursuits. This obligation encompasses refraining from behaviors such as cheating, plagiarism, deception, falsification of information and records, bribery, misrepresentation, and any form of academic dishonesty. Academic departments and offices should proactively adopt measures to ensure the enforcement of the Code of Academic Integrity, particularly within the domains of learning, teaching, and research.", 
+    "Every person participating in the university's educational programs and services, whether as a student, educator, researcher, staff member, or academic administrator, is required to maintain honesty and integrity in all their academic activities. This commitment includes refraining from actions like cheating, plagiarism, deception, fabricating facts and records, bribery, misrepresentation, and any form of dishonesty. Academic departments and offices are expected to implement strategies to promote and uphold the Code of Academic Integrity, especially in the contexts of learning, teaching, and research."
+    ]
+},
+{
+    "tag": "Student Academic Load",
+    "patterns": 
+    [
+    "What is the student academic load?",
+    "How is the student academic load determined?",
+    "Tell me about the student academic load",
+    "About academic load"
+    ],
+    "responses": 
+    [
+    "2.1 Regular Load<br>The regular load of students is reflected in their curriculum. As a general rule, students should enroll in courses prescribed by the curriculum for the semester in order to complete their degrees within the prescribed period.<br><br>A credit unit is equivalent to one hour of lecture a week in a semester. Only graduating students authorized by the University Registrar, upon the written recommendation of the College Dean, shall be allowed to take more than the prescribed curricular unit load.<br><br>2.2 Overload<br>Any overload should not exceed six (6) lecture units or one hundred eight (108) hours in excess of the normal load.<br><br>2.3 Midyear Load<br>In the midyear term, undergraduate students shall carry a maximum academic load of nine (9) units or one hundred sixty-two (162) hours.<br><br>2.4 Minimum Study Load<br>A student cannot enroll less than 50% of his/her regular semester load without justifiable reason.",
+    "Regular Load: Students must adhere to the curriculum's prescribed courses for the semester to complete their degrees within the allotted time. A credit unit equals one weekly hour of lecture per semester. Only graduating students, with approval from the University Registrar based on the College Dean's recommendation, can exceed the standard unit load. <br>2.2 Overload: An overload is acceptable as long as it doesn't surpass six lecture units or 108 hours beyond the normal load. <br>  Midyear Load: <br> During the midyear term, undergraduate students can carry a maximum load of nine units or 162 hours. <br>  Minimum Study Load: Students cannot enroll in less than 50% of their regular semester load without a valid reason.", 
+    "To meet degree completion timelines, students are expected to enroll in curriculum-prescribed courses for the semester. One credit unit corresponds to one weekly lecture hour in a semester. Graduating students may exceed the standard unit load upon the College Dean's written recommendation and University Registrar's approval. <br>Overloading is permitted, but it should not exceed six lecture units or 108 hours beyond the standard load. <br>In the midyear term, undergraduate students can take a maximum of nine units or 162 hours. <br>Enrolling in less than 50% of the regular semester load without a valid reason is not allowed."
+    ]
+},  
+{
+    "tag": "Load Revision",
+    "patterns": 
+    [
+    "What is load revision?",
+    "What are load revision guidelines?",
+    "Tell me about load revision",
+    "Details about load revision"
+    ],
+    "responses": 
+    [
+    "3.1 During Enrollment Period<br>There shall be load revision which includes inclusion and deletion of courses by the students to give them the opportunity to revise and arrange their schedules except block section.<br><br>The inclusion/deletion of courses shall be done using inclusion module in the Record Management System (RMS).<br><br>Adding of course shall be allowed if:<br><br>3.1.1 Change in load is due to dissolved course.<br>3.1.2 Under load and was advised to add the course.<br>3.1.3 Department approved the additional course.<br><br>",
+    "Load revisions, involving adding or removing courses, are permitted for students during the enrollment period, except for block sections. These changes should be made through the inclusion module in the Record Management System (RMS). Course additions are allowed under specific circumstances, such as a dissolved course, underload with an advisory to add, or department approval for an additional course.", 
+    "During the enrollment period, students are allowed to modify their schedules by adding or removing courses, with the exception of block sections. This course adjustment process utilizes the inclusion module within the Record Management System (RMS). Students can add a course in cases where a course has been dissolved, they are underloaded with an advisory to add the course, or the department has granted approval for the additional course."
+    ]
+},
+{
+    "tag": "Adding Course",
+    "patterns": 
+    [
+    "What are the procedures of adding a course?",
+    "How to add a course?",
+    "Tell me about adding a course",
+    "Adding courses in LMS"
+    ],
+    "responses": 
+    [
+    "3.2.1  Adding of Course<br><br>3.2.1.1  Proceed to the program department/college where the course/s is offered<br><br>3.2.1.2  Check whether the course is still available.<br><br>3.2.1.3  Present the printed final pre-advised course course/approve overload/simultaneous permit to process inclusion through the system.<br><br>3.2.1.4  Check the updated course enlistment at e-learning."
+    ]
+},
+{
+    "tag": "Deletion of Course",
+    "patterns": 
+    [
+    "What are the procedures of deleting a course?",
+    "How to delete a course?",
+    "Tell me about deleting a course",
+    "Course deletion"
+    ],
+    "responses": 
+    [
+    "3.2.2.1  Get and accomplish Deletion form from the Program Department/College.<br><br>3.2.2.2  Secure approval from the Course Department.<br><br>3.2.2.3  Proceed and present the approved deletion form to designated computer laboratories for processing.<br><br>3.2.2.4  Check the updated enlistment schedule at e-Learning"
+    ]
+},
+{
+    "tag": "Dropping of Course",
+    "patterns": 
+    [
+    "What are the procedures of dropping a course?",
+    "How to drop a course?",
+    "Tell me about dropping a course",
+    "Dropping courses details"
+    ],
+    "responses": 
+    [
+    "Dropping of courses without records should be done within the week after the end of enrollment; while dropping of courses with records shall start immediately after the end of dropping without records until midterm examination.<br><br>3.3.1  Without Records<br><br>3.3.1.1  Get and accomplish F-REG-310 form (pink( from the Registrar's Office<br><br>3.3.1.2  Secure the required signature of Dean/Chairperson, Registrar and Cashier<br><br>3.3.1.3  Distribute the approved copy to the concerned offices<br><br>3.3.2  With Records<br><br>3.3.2.1  Get and accomplish F-REG-311 (white) from the Registrar and Cashier.<br><br>3.3.2.2  Secure the required signature of Instructor, Dean/Chairperson, Registrar and Cashier.<br><br>3.3.2.3  Distribute the approved copy to the concerned offices.<br><br>Note: Courses not officially dropped at any time of the school terms are considered failure and marked 5.0; and will be recorded in the student permanent record book.",
+    "The process of dropping courses is as follows: <br>Without Records: <br> Obtain and complete F-REG-310 form (pink) from the Registrar's Office. <br> Obtain the necessary signatures from the Dean/Chairperson, Registrar, and Cashier. <br> Distribute the approved copy to relevant offices. <br>With Records: <br><br> <br>Obtain and complete F-REG-311 (white) from the Registrar and Cashier. <br>Obtain the required signatures from the Instructor, Dean/Chairperson, Registrar, and Cashier. <br>Distribute the approved copy to concerned offices."
+]
+},             
+{
+    "tag": "Dissolved Courses",
+    "patterns": 
+    [
+    "How does a course get dissolved?",
+    "What are the procedures for dissolved courses?",
+    "Tell me about dissolved courses",
+    "Conditions for dissolved courses",
+    "How do they determine when to dissolve courses?"
+    ],
+    "responses": 
+    [
+    "3.4.1  Dissolved Courses<br><br>3.4.1.1  Off semester courses with less than 30 students enrolled shall be dissolved.<br><br>3.4.1.2  Sections with less than ten (10) enrollees after the ;ast day of enrollment shall be automatically dissolved by the Registrar, except for the conditions specified by the Registrar's Office.<br><br>3.4.1.3  Dissolved sections that are not fused with other classes are automatically deleted from the Master List of Sections. Students from dissolved sections shall be accommodated for inclusion in other sections following the guidelines for inclusion.<br><br>3.4.1.4  Reactivated dissolved section will be treated as tutorial section. If less than 30. The Department/College should furnish the Scheduling and Automation Section a written request to process the same to the approval Registrar's Office.",
+    "Handling Dissolved Courses: Dealing with dissolved courses involves the following procedures:<br><br> Off-semester courses with less than 30 students enrolled will be dissolved. <br>Sections with less than ten (10) enrollees after the final day of enrollment will be automatically dissolved by the Registrar, except for cases specified by the Registrar's Office. <br>Dissolved sections that are not merged with other classes will be removed from the Master List of Sections. Students from dissolved sections will be accommodated in other sections according to inclusion guidelines. <br>Reactivated dissolved sections, if they have fewer than 30 students, will be treated as tutorial sections. The Department/College should submit a written request to the Scheduling and Automation Section for processing, with approval from the Registrar's Office."
+    ]
+},
+{
+    "tag": "Fusion of courses",
+    "patterns": 
+    [
+    "How to fuse courses?",
+    "What are the procedures for fusion of courses?",
+    "Tell me about fusion of courses",
+    "How do they determine when to fuse courses?"
+    ],
+    "responses": 
+    [
+    "Sections with the same course code, course title, number of units and schedules will be the basis for fusing the course provided the combined number of students shall not be less than the minimum class size requirements, otherwise, it will be treated as tutorial class.<br><br>Dissolved sections will be deleted from the list of sections enrolled by the students. Once reactivated and converted to tutorials, new sections will appear on the list of enrolled courses of students if he/she signed in the tutorial form administered by the teacher assigned.<br><br>After fusion of course,students from the dissolved section will be transferred to the retained section."
+    ]
+}, 
+{
+    "tag": "Petition to offer tutorial classes",
+    "patterns": 
+    [
+    "How to petition to offer tutorial classes?",
+    "What is the process for petitioning for tutorial classes?",
+    "Tell me about the petition to offer tutorial classes",
+    "How do tutorial classes get integrated?"
+    ],
+    "responses": 
+    [
+    "3.5.1  Petition is a process whereby students may officially request for the opening of a tutorial class of a course included in a curriculum. Resquest shall be made by accomplishing the PETITION TO OFFER TUTORIAL CLASSFORM (F-REG-204).<br><br>3.5.2  Once the petitioned class becomes official, students who signed up for its opening shall not be allowed to drop the course. The department should inform students about the condition before signing up.<br><br>3.5.3  Petitioned course/s should be included in the teaching load of the faculty member, only after it is officially approved by the Registrar to prevent loading problem in case the petition is disallowed or withdrawn.<br><br>3.5.4  The petition must be submityted on or before the date prescribed by the Registrar's Office; otherwise, this may be a ground for disapproval.",
+    "Petitioning for Tutorial Classes: <br> The petition process allows students to officially request the creation of a tutorial class for a curriculum course. To make this request, students should complete the PETITION TO OFFER TUTORIAL CLASS FORM (F-REG-204).<br> Once the petitioned class is approved, students who signed up for it cannot drop the course. The department should inform students about this condition before they sign up. <br> Faculty members should include petitioned courses in their teaching load only after official approval by the Registrar, to avoid loading issues in case the petition is disallowed or withdrawn. Petitions must be submitted by the Registrar's prescribed date, as failure to do so may result in disapproval."
+    ]
+},
+{
+    "tag": "Overload",
+    "patterns": 
+    [
+    "What happens if I have overload subjects?",
+    "How do I apply for overload?",
+    "Tell me about overloading subjects",
+    "When can we be allowed to overload subjects?"
+    ],
+    "responses": 
+    [
+    "3.6.1  Student Overload<br><br>3.6.1.1  Department Chairperson/Dean may allow students who are on their terminal year to enroll up to six (6) lecture units or 108 hours in excess of the regular load.<br><br>3.6.1.2  For compelling reasons accepted by the Department Chairperson/Dean, enrollment in three (3) Laboratory courses maybe allowed provided the total enrollment will not exceed twenty-one (21) units. The program of study is required.<br><br>3.6.1.3   The Chairperson shall endorse an application for overload to the Dean's Office based on his/ her assessment of the ability of the student to take up courses in excess of the regular load. Unless another schedule is announced by the Registrar applications for over load for the next semester may be filled at the Registrar's Office beginning one (1) week before the final examinations. The last day for filling of applications for overload shall be one week before the last day of enrollment.",
+    "Student Overload: Under certain conditions, students in their terminal year may be permitted to enroll in up to six additional lecture units or 108 extra hours beyond their regular load, subject to approval by the Department Chairperson/Dean. <br> Lab Course Exception: In cases where compelling reasons are accepted by the Department Chairperson/Dean, students may enroll in up to three laboratory courses, as long as their total enrollment doesn't exceed twenty-one units. A program of study is required for this exception.<br><br>Application Process: The Chairperson assesses a student's ability to handle a course overload and endorses the application to the Dean's Office. Applications for overload in the upcoming semester can typically be submitted to the Registrar's Office starting one week before the final exams, with a deadline one week before the last day of enrollment, unless otherwise announced by the Registrar."
+    ]
+},
+{
+    "tag": "Simultaneous Load",
+    "patterns": 
+    [
+    "What happens if i have simultaneous load?",
+    "How do I apply for simultaneous load?",
+    "Tell me about simultaneous load",
+    "How can I avail Simultaneous Load?"
+    ],
+    "responses": 
+    [
+    "3.6.2.1  Simultaneous Load Permit may availed by a student as a onetime privilege on his/her terminal year to take the identified pre-requisite course and requisite course at the same time as recommended by the Department Chairperson/ Dean and approved by the Registrar. However, if a student passess the PREREQUISITE COURSE, but fails the REQUISITE COURSE, then the grade in the former course will be encoded. On the other hand, if a student fails the PREREQUISITE COURSE, then the REQUISITE COURSE is considered failed.<br><br> 3.6.2.2  Requirements<br>a. Application letter for overload / simultaneous load<br>b. Attach latest copy of Automated Evaluation of Student Academic Records (AESAR), from the Registrar's Office<br>c. 1 pc 2x2 picture (white background)<br><br>3.6.2.3  Procedures<br>a. Fill out Request for Overload Porm Request for Simultaneous Load Form. Make a program of study form available at the program department.<br>b. Fill out application form for Automated Evaluation of Students Academic Record (AESAR) and pay at the Cashier's Office if credentials are complete; otherwise submit the lacking credentials.<br>c. Submit the accomplished Overload/Simultaneous load form, program of study and AESAR to the program department for processinganapproval.<br>d. Get the approved document/s from the program department."
+    ]
+},           
+{
+    "tag": "Cross-Enrollment",
+    "patterns": 
+    [
+    "What are the guidelines for cross-enrollment?",
+    "How to cross-enroll?",
+    "Tell me about cross-enrollment",
+    "What are the requirements for cross-enrollment?"
+    ],
+    "responses": 
+    [
+    "3.6.3.1  Fill out Request to Cross-Enroll and secures approval from the Dear/Chairperson.<br><br>3.6.3.2  Pay cross-enrollment permit fee at the Cashier's Office<br><br>3.6.3.3  Submit request at the respective program window of the Registrar's Office for processing.<br><br>3.6.3.4  Get the approved document/s from the program window of the Registrar's Office."
+    ]
+},
+{
+    "tag": "Policies on change of program / major",
+    "patterns": 
+    [
+    "What are the guidelines for changing a program or major?",
+    "How to change programs?",
+    "Tell me about the policies on change of program / major",
+    "How can I apply to change program/major?"
+    ],
+    "responses": 
+    [
+    "5.1  A student may apply to shift to another program offered within the University after completing at least one semester of his current program.<br><br>5.2   Shifting to other programs shall be approved by both releasing and accepting departments and colleges. The appropriate Change of Major / Program Form shall be used.<br><br>5.3   Students academically excluded from one program but not from the University may be legible to change program or change major.<br><br>5.4   Procedures:<br><br>5.4.1  Fill-out the Change of Major/Program Form at respective College / Department.<br><br>5.4.2  Proceed to accepting college/department for approval.<br><br>5.4.3  Proceed to releasing college/department for approval of release.<br><br>5.4.4  Forward the form to the Registrar's Office-Program Window for approval and assessment.<br><br>5.4.5  Pay shifting form at the Cahier's Office.<br><br>5.4.6  Submit accomplished forms to concerned offices (Registrar, Dean, and Cashier)."
+    ]
+}, 
+{
+    "tag": "Policies on transfer of school",
+    "patterns": 
+    [
+    "What are the guidelines for transfering schools?",
+    "How to transfer school?",
+    "Tell me about the policies on transfer of school",
+    "What steps should I follow if I decide to transfer to another school?"
+    ],
+    "responses": 
+    [
+    "6.1  A student who intends to transfer to another school must apply for Transfer Credentials at the Registrar's Office.<br><br>6.2  He/ She shall be required to submit a duly accomplished Application Form with corresponding clearance; (1) ID 2x2 picture while background (digital and cut out picture not accepted) and must be in business/ corporate attire: and surrender school ID.<br><br>6.3  The transfer credentials consist of:<br><br>6.3.1  True Copy of Grades (Transcript of Records shall be forwarded upon the request of the accepting school).<br><br>6.3.2  Certificate of Good Moral Character.<br><br>6.3.3  Certificate of Transfer Credentials <br><br>6.4  Procedures<br><br>6.4.1  Fill-out the Application  form for Transfer Credentials at the respective Program Window.<br><br>6.4.2  Secure clearances from different offices (Library, Laboratory, Guidance, Dean, OSA, and Cashier).<br><br>6.4.3  Proceed to respective Program Window for submission of required documents. If credentials are complete, assessment will be available for payment, otherwise submit the lacking credentials.<br><br>6.4.4  Proceed to Cashier for payment.<br><br>6.4.1  Submit accomplished form to the respective Program Window and get claim stub.<br><br>6.4.1  Claim Transfer credentials on the date stated in the claim stub and surrender the claim stub at the Program Window."
+    ]
+},
+{
+    "tag": "Student Attendance",
+    "patterns": 
+    [
+    "What are the guidelines for student attendance?",
+    "What are the rules for student attendance?",
+    "Tell me about student attendance",
+    "Attendance policy"
+    ],
+    "responses": 
+    [
+    "1.1.1   Every student is required to attenda no less than 80% of the required contact hours in agiven course to earn the corresponding units. The number of allowed absences should not exceed 20% of the required contact hours.<br><br>1.1.2   As a guide in determining the number of contact hours per course, a one-unit lecture course requires 18 contact hours; one unit laboratory course requires 54 contact hours; and for courses with lecture amd laboratory components, contact hours are the combined equivalent.<br><br>1.1.3   Any student who accumulates absences more than the maximum number of hours allowed in a course:<br><br>1.1.3.1  Is disqualified from earning any unit for the course;<br><br>1.1.3.2  I dropped from the class with a final mark of 6.0 (DROPPED) if the dropped officially;<br><br>1.1.3.3   Is given a grade of 5.0 (Failed) if he/she is failing at the time of the last allowable absence and failed to drop officially.<br><br>1.1.3.4   Is given a grade of 6.0 if he/she is passing at the time of the last allowable absence and failed to drop officially.<br><br>1.1.4    Parents or guardians will be notified of the absences incurred by the student through the Guidance Office or by an office designated by proper administrative authority.",
+    "Attendance Requirement: <br> Students must attend a minimum of 80% of the required contact hours in a course to earn the corresponding units, allowing a maximum of 20% absences. <br><br>Contact Hours: <br><br> Contact hours vary by course type: one-unit lecture courses require 18 contact hours, one-unit laboratory courses require 54 contact hours, and combined lecture-laboratory courses have equivalent combined contact hours.<br>Consequences of Excessive Absences: <br><br> Students accumulating absences beyond the allowed limit:<br>Are disqualified from earning units for the course.<br> May be officially dropped from the class with a final mark of 6.0 (DROPPED) if dropped officially.<br> Receive a grade of 5.0 (Failed) if failing at the time of the last allowable absence and failing to drop officially.<br>Receive a grade of 6.0 if passing at the time of the last allowable absence and failing to drop officially. <br>Notification: <br>Parents or guardians will be informed of student absences through the Guidance Office or an office designated by proper administrative authority."
+    ]
+},   
+{
+    "tag": "Student Tardiness",
+    "patterns": 
+    [
+    "What if a student is tardy?",
+    "Are there rules for being tardy?",
+    "What happens if I'm tardy for too long?",
+    "Tell me about student tardiness"
+    ],
+    "responses": 
+    [
+    "1.2.1 Three (3) incidences of tardiness of the student shall be equivalent to one (1) absence<br><br>1.2.2 A student who comes to class within 15 minutes shall be marked late. Counting of minutes is based at the start of the official class schedule.<br>1.2.3 A student who comes to class after the allowed time for tardiness shall be marked absent."
+    ]
+},   
+{
+    "tag": "Missed Activities",
+    "patterns": 
+    [
+    "What are the guidelines for missed activities?",
+    "What happens when a student missed an activity?",
+    "Tell me about missed activities",
+    "What do I do when I missed an academic activity?"
+    ],
+    "responses": 
+    [
+    "1.3.1  Academic activities including tests, quizzes and lessons missed by a student on account of excused absences may be substituted with appropriate makeup at the discretion of the teacher, and following policies and guidelines which may be issues by the Academic Department under whose administration the course is offered.<br><br>The student is expected to be responsible to know what he/she missed during his/her absence.",
+    "Makeup for Excused Absences: <br> In cases of excused absences, students may substitute missed academic activities, such as tests, quizzes, and lessons, with appropriate makeup as determined by the teacher. This should align with the policies and guidelines established by the relevant Academic Department. <br> Excused Absences and Academic Activities: <br>When a student has excused absences, the teacher may permit makeup for academic activities like tests, quizzes, and lessons. The specific procedures for makeup should adhere to the policies and guidelines set forth by the Academic Department responsible for the course. <br> Academic Activity Makeup for Excused Absences: <br>If a student is absent for legitimate reasons, such as excused absences, makeup arrangements for academic activities (e.g., tests, quizzes, and lessons) may be decided by the teacher. The Academic Department overseeing the course will provide policies and guidelines to follow. <br>When you miss an academic activity due to a valid excuse, you should approach your teacher to discuss the possibility of making up for what you missed. The teacher will determine if a makeup is feasible and will guide you through the process, following the policies and guidelines established by the relevant Academic Department. It's your responsibility to stay informed about what you missed during your absence and take appropriate action to make up for it."
+    ]
+},   
+{
+    "tag": "Policies on examination",
+    "patterns": 
+    [
+    "What are the policies on examination?",
+    "What are the rules for examinations?",
+    "Tell me about the policies on examination",
+    "Examination policies"
+    ],
+    "responses": 
+    [
+    "2.1 Periodic Examination<br><br>2.1.1 The Periodic Examinations given each semester are Preliminary, Mid-term and Comprehensive Final Examiantions. Department Examinations for on-semester courses with more than three sections shall be institutionally administered during periodic examinations.<br><br>2.1.2 The Periodic Examinations to be administered shall consist of the Prelim, the Midterm and the Comprehensive Final Examination, which shall be constructed following the protocol in test construction/simulating the questions in board examinations (for board programs).<br><br>2.1.3 The coverage of the examinations shall be as follows:<br>Prelim Period: week 1 to week 6<br>Prelim Exam on the 6th week<br>Midterm Period week 7 to week 12;<br>Midterm Exam on the 12th week<br>Final Period week 13 to week 18;<br>Comprehensive Final Exam on the 18th week<br>Schedule of Final Examination<br>Day 1-4 - Comprehensive Final Exam<br>Day 5 until encoding period -Remedial Exam<br><br>2.1.4 Other requirements than the periodic examinations may be given in laboratory courses and field courses as determines by the teacher and approved by the Department Chairperson/Dean.<br><br>2.1.5 The course coverage and type of tests for periodic examinations shall be determined by the etacher based on the nature of subject matter covered and guided by the approved syllabus.<br><br>2.1.6 The Registrar's Office shall have the sole responsibility of scheduling periodic examination based on the official school calendar. There shall be no regular classes/make-up classes during final examination week.<br><br>2.1.7 Students shall secure their examination permits from the Treasurer's Office “No Permin, No Exam”. Faculty members shall check examination permits Likewise, students with anpaid accounts must secure a temporary permit from the Treasurer's Office.<br><br>2.1.8 The schedule for periodic examinations shall be STRICTLY followed. Students who have conflict in their examination schedule shall notify the Chairperson/Dean's Office about this matter immediately for appropriate action.<br><br>2.1.9 Faculty members shall discuss the answers of the examination (for prelim and midterm) and return connected papers promptly to the concerned students only. Individual scores/grades of students shall not be announced/disclosed publicly.",
+    "Periodic Examinations encompass Preliminary, Midterm, and Comprehensive Final Exams, including department exams for certain courses. <br>The Registrar's Office handles exam scheduling, and students must obtain examination permits. Strict adherence to exam schedules is required, and conflicts should be reported promptly. Faculty members discuss exam answers privately with students, maintaining confidentiality of individual scores.", 
+    "Periodic Examinations consist of Preliminary, Midterm, and Comprehensive Final Exams, with department exams for on-semester courses having more than three sections. The exams' coverage and schedule are defined, and the Registrar's Office is responsible for scheduling exams. Students must obtain examination permits, and exam schedules must be strictly followed. Faculty members discuss exam answers with students, but individual scores are not publicly disclosed."
+    ]
+},
+{
+    "tag": "Special Examination",
+    "patterns": 
+    [
+    "What are the policies on special examination?",
+    "What are the rules for special examinations?",
+    "Tell me about the policies on special examination",
+    "Special examination policies"
+    ],
+    "responses": 
+    [
+    "2.2.1 Special/Make-Up examinations shall be given to students who failed to take the scheduled examination for any of the following reasons:<br><br>2.2.1.1  Illness or injury caused by accident as evidenced by a medical certificate<br><br>2.2.1.2  Death of a member of the family (grandparents, parents, guardian, brother or sister, in some cases, spouse or child) as evidenced by testimony and letter from guardian/parent.<br><br>2.2.1.3  Student/s officially representing the university in various activities such as tournaments quiz bee or seminars/conventions/conferences.<br><br>2.2.1.4  Force Majeure (Please refer to CMO No. 15, series of 2012: “Amendment to CMO 34, Series of 2010 titled Guidelines for the Suspension of Classes in Higher Education Institutions HEIs” due to typhoons/storms/flooding and other weather disturbances”).<br><br>2.2.1.5 Other emergencies or reasons determined as valid and meritorious by the Chairperson/Dean.<br><br>2.3 Policy for Giving a Special Make-Up Major Examination<br><br>2.3.1  Make-up examination for the prelim and midterm periods shall be conducted within two weeks after beginning of the next term.<br><br>2.3.2  A student who missed the final exam shall be given five (5) working days from the scheduled final examination to show proofs of his /her excuse(s).<br><br>2.3.3  Student shall be required to take the examination immediately after the reason was verified to be valid in accordance to the specified reasons for Special/Make up Examinations.<br><br>2.3.4  If a student failed to comply, he/she will be given a score of ZERO (0) for the examination and the grade shall be computed accordingly.<br><br>2.3.5  The concerned faculty shall provide the department/college of the special examination questionnaire, which shall be administered by the Dean or Chairperson for the Comprehensive final exam if the concerned faculty is unavailable.",
+    "Special/Make-Up exams are allowed for valid reasons like illness, family bereavement, university representation, force majeure, or other emergencies. <br>Policy for Special Make-Up Major Exams includes timeframes for preliminary and midterm makeup exams, a 5-day window for final exam excuses, and immediate retesting upon valid verification.", 
+    "Special/Make-Up exams are available to students with valid reasons such as illness, family deaths, university representation, force majeure, or other emergencies. <br>Make-up exams for prelim and midterm periods are held within two weeks of the next term, and for the final exam, students have five working days to provide valid excuses."
+    ]
+},
+{
+    "tag": "Policy on Grading System",
+    "patterns": 
+    [
+    "What's the chart for the grading system?",
+    "How to determine grade points?",
+    "What are the grade points?",
+    "Tell me about the grading system",
+    "Semestral grade chart"
+    ],
+    "responses": 
+    [
+    "Semestral Grade:\n100, 99, 98, 97 -> 1.00\n96, 95, 94, 93 -> 1.25\n92, 91, 90, 89 -> 1.50\n88, 87, 86, 85 -> 1.75\n84, 83, 82 -> 2.00\n81, 80, 79 -> 2.25\n78, 77, 76 -> 2.50\n75, 74, 73 -> 2.75\n72, 71, 70 -> 3.00\n<70 -> 5.00\nDropped -> 6.00\nNo Grade -> 0.00"
+    ]
+},
+{
+    "tag": "Encoding of Grades",
+    "patterns": 
+    [
+    "When is the encoding of grades?",
+    "What are the guidelines for the encoding of grades?",
+    "Tell me about the encoding of grades",
+    "Grade enconding details",
+    "About grade encoding"
+    ],
+    "responses": 
+    [
+    "5.1 The Prelim, Midterm and Final Term Grades shall be encoded following the schedules provided by the Office of the Registrar.<br><br>5.2 Grades for the lecture & laboratory shall be combined by the faculty members on the Final Term before encoding.",
+    "Encoding Prelim, Midterm, and Final Term Grades should adhere to the schedules set by the Registrar's Office. <br>Lecture and laboratory grades are to be combined by faculty members during the Final Term before encoding.",
+    "Prelim, Midterm, and Final Term Grades must be encoded according to the Registrar's provided schedules.<br> Faculty members will combine lecture and laboratory grades during the Final Term before encoding."
+    ]
+}, 
+{
+    "tag": "Output-Based Courses",
+    "patterns": 
+    [
+    "What are the guidelines for output-based courses?",
+    "What are the rules for output-based courses?",
+    "Tell me about output-based courses",
+    "Output-based courses",
+    "How do they grade output-based courses?"
+    ],
+    "responses": 
+    [
+    "6.1 A grade of 140 may be encoded only in output-based subjects (e.g., thesis  or its equivalent, and internship.<br><br>6.2 A student is given a period of one year to comply with the course requirement(s). Failure to comply within the prescribed period, the grade of 140 shall automatically be converted to a failing grade (5.0).",
+    "A grade of 140 is permissible only for output-based subjects such as thesis or internships. <br> Students have one year to fulfill the course requirement(s). If they fail to do so within this period, the grade of 140 will automatically change to a failing grade (5.0).",
+    "The grade 140 is applicable only for output-based subjects like thesis or internships. <br>Students have one year to fulfill the course requirement. If they fail to do so within the given time, the grade of 140 will be automatically changed to a failing grade of 5.0."
+    ]
+},   
+{
+    "tag": "General Weighted Average",
+    "patterns": 
+    [
+    "What is the General Weighted Average?",
+    "What's GWA?",
+    "Tell me about General weighted average",
+    "General Weighted Average details"
+    ],
+    "responses": 
+    [
+       "7.1 The GWA refers to the general weighted average of grades in all enrolled academic units in the university, at the end of a given semester except NSTP.<br><br>7.2 The(GWA) is computed as follows:<br><br> - 7.2.1 Multiply the credit units for each course with the corresponding final grade<br> - 7.2.2 Add all credit grades<br> - 7.2.3 Divide the total credit grades by the total number of credit units during the semester. GWA is computed up to 2 decimal places.",
+       "The GWA, or General Weighted Average, is the average of grades in all academic units at the end of a semester, excluding NSTP. <br>The GWA is calculated by multiplying credit units by final grades, summing these credit grades, and dividing by the total credit units. <br>The result is rounded to two decimal places.",
+       "7.1 GWA, which stands for General Weighted Average, is the overall average of grades for all academic units taken in the university at the end of a semester, excluding NSTP. <br>7.2 The GWA is determined by multiplying each course's credit units by its final grade, totaling these credit grades, and then dividing by the total number of credit units for that semester. The GWA is expressed with precision up to two decimal places."
+    ]
+},
+{
+    "tag": "Policies on Grade Appeal",
+    "patterns": 
+    [
+    "What's the policy for grade appeal?",
+    "How to appeal for grades?",
+    "Tell me about the policies for appealing grades",
+    "Appealing grades"
+    ],
+    "responses": 
+    [
+    "9.1 Grades are considered final once they are officially received by the Registrar following prescribed procedures. The grades are considered officially received by the Registrar at the point of encoding by the faculty member. They then become part of the database managed by the Registrar.<br><br>9.2 The faculty members can no longer change the grades at his/her own initiative or discretion once they are already encoded after the encoding period. The encoded grades are no longer within the faculty member's authority or jurisdiction.<br><br>9.3 Correction of grades shall be subject to the rules and regulations of the CHED and other competent regulatory bodies. Grades may be corrected only if there is proof of error in:<br>a. Recording in the class record<br>b. Encoding of grades<br>c. Checking of answers<br>d. Grade computation<br><br>9.4 The Registrar shall authorize the correction of grades on the following protocols:<br><br>9.4.1 Request originating from a faculty member- The request to change a grade shall be initially addressed to the Department Chairperson/Dean accompanied by pertinent supporting documents. The Chairperson / Dean shall determine the merit of the request for endorsement to the Office of Vice President for Academic Affairs (VPAA). The VPAA shall then form a Grades Appeal Committee which shall review the request and submit to the Registrar the appropriate action.<br><br>9.4.2 Grades appeal from student- The appeal shall be addressed to the concerned faculty member; copy furnished the Department Chairperson Dean. The faculty member shall be given five (5 )working days within which to determine its merit and advise in writing the student and the Department Chairperson/Dean, accordingly. If found meritorious, the faculty member shall request correction of the grade following protocol (4) above.<br><br>9.4.3 In case the request is denied, the student may appeal to the College Dean The Dean shall determine the merit of the request for endorsement to the Office of Vice President for Academic Affairs (VPAA). The VPAA shall then form a Grades Appeal Committee which shall review the appeal and request the cooperation of the faculty member during the investigation. If the appeal is proven valid, appropriate rectification will be recommended to the Registrar.<br><br>9.4.4 In the event that the faculty will not cooperate and the committee finds merit to the appeal, the committee will recommend for the rectification subject for the approval of the VPAA. The concerned faculty will be duly notified of the decision.<br><br>9.5 Rectification of grade after one semester shall not be allowed.<br><br>9.6 The Grades Appeal Committee shall be composed of the different College Deans.<br><br>9.7 Procedures<br>9.7.1 Student writes a letter to the Dean / Chairperson to correct student's grade/s.<br>9.7.2 Dean / Chair endorses request to the Office of the Vice President for Academic Affairs, if with merit.<br>9.7.3 VPAA forms Grades Appeal Committee to review and decide on the merit of the request.<br>9.7.4 Faculty member presents the facts/other pertinent documents to Grades Appeal Committee.<br>9.7.5 Grades Appeal Committee submits a recommendation/s after the review to the VPAA for approval.<br>9.7.6 VPAA forwards the decision to the Registrar.",
+    "Grades are considered final once faculty members encode and the Registrar receives them. Faculty cannot change grades after encoding, except for documented errors. The correction process includes appeals by students or faculty, review by the Grades Appeal Committee, and approval by the Registrar, with a one-semester deadline for corrections. The committee comprises various College Deans, and the VPAA plays a crucial role in the process.",
+    "To appeal for grades, follow these steps: <br>1. Write a letter to the Dean or Chairperson to request a correction of your grades.<br> 2. The Dean or Chairperson will endorse your request to the Office of the Vice President for Academic Affairs if it has merit.<br> 3. The Vice President for Academic Affairs (VPAA) will form a Grades Appeal Committee to review your request and decide on its merit. <br>4. If necessary, the faculty member involved will present relevant facts and documents to the Grades Appeal Committee. <br>5. The Grades Appeal Committee will submit its recommendation after the review to the VPAA for approval. <br>6. The VPAA will forward the decision to the Registrar for implementation."
+    ]
+},
+{
+    "tag": "Internship / On The Job Training/ Practicum Programs",
+    "patterns": 
+    [
+    "What are the guidelines for internship, on the job training and practicum programs?",
+    "What are the rules for OJT?",
+    "Tell me about internships"
+    ],
+    "responses": 
+    [
+    "10.1 The students enrolled in internship/OJT/Practicum program/RLE are required to complete the number of hours stated on the latest CHED-CMO requirements prior to granting a degree.<br><br>10.2 Requirements:<br><br>10.2.1 Student<br><br>10.2.1.1. Must be officially enrolled in the required area of Internship/OJT/Practicum program/RLE:<br><br>10.2.1.2. Must have satisfactorily completed the required prerequisite course/courses:<br><br>10.2.1.3. Should be physically and mentally fit as certified by the Director, Health Services.<br><br>Note: The details and requirements on this matter will be discussed by the respective advisers.<br><br>10.2.2 School<br><br>10.2.2.1 Must have a Memorandum of Agreement (MOA) or Letter of Acceptance (LOA) with the institutional partners.<br><br>10.2.2.2 Must be a partner institution;<br><br>10.2.2.3 Must have a MOA/ LOA with the partner school,<br><br>10.2.2.4 Must ensure that the practice sites should possess adequate facilities and be made available to the students to gain diversified experience and competence in different professional environments,<br><br>10.2.2.5 Must ensure that a preceptor/supervisor is assigned to supervise the interns, and is accountable to the school for appraising and evaluating the interns.<br><br>10.2 Internship Procedures<br><br>Please refer to the Institutional Internship Manual from the Career and Placement Office/Guidance Office.<br><br>10.3 Accreditation of Institutional Partners<br><br>10.4.1 The student applying for internship may search for accredited industry partners, companies, institutions from his/her academic department and the Guidance Placement Office<br><br>10.3 Accreditation of Institutional Partners<br><br>10.4.1 The student applying for internship may search for accredited industry partners, companies, institutions from his/her academic department and the Guidance Placement Office.<br><br>10.4.2 If the student would like to have training in an unaccredited industry partner, he/she must request his/her academic department to initiate MOA (Memorandum of Agreement) with the said industry/ company/ institution to directly specify the requirements needed in his/her program.<br><br>10.4.3 If the student decided to have training in an accredited industry partner, he/she must have a copy of the MOA (Memorandum of Agreement) from the office where he/she got the direct referral.",
+    "Internship programs require students to meet CHED-CMO hour requirements and be officially enrolled in prerequisite courses. The school needs agreements with partner institutions, ensuring facilities and supervisors. Students can choose accredited partners or request agreements with unaccredited ones through their academic department.",
+    "To complete their degree, students in internship programs must fulfill CHED-CMO hour requirements. Students should be officially enrolled and meet health criteria. The school must have agreements with partner institutions and provide proper facilities, supervisors, and an internship manual."
+    ]
+},   
+{
+    "tag": "University Academic Scholarships",
+    "patterns": 
+    [
+    "What are the different scholarships offered by adamson university?",
+    "What are the conditions for scholarships?",
+    "Tell me about the academic scholarships"
+    ],
+    "responses": 
+    [
+    "3.1 Ozanam Study Grant Program (OSGP)<br><br>The OSGP is the scholarship program provided by the university to deserving but financially challenged students. Grantees of the Program render service in the University's various offices, sports facilities, laboratories and libraries in exchange for the 100% free tuition fee and monthly allowance.<br><br>The OSGP has three areas of educational development concerns: academic. office and apostolate. The OSGP scholars should be able to maintain a certain General Weighted Average every semester, while keeping satisfactory service outputs in their respective office assignments. They should likewise be able to render apostolic service while enjoying the scholarship.<br><br>3.2 Scholarships under the Cultural Affairs Office<br><br>3.2.1 Adamson University Chorale<br><br>Any Chorale members can avail the Php 10.000.00, 50% and 100% discount from the tuition fee based on the length of services (computed on the actual enrolled courses) upon passing the audition and training;<br><br>Services rendered within 1 year can avail the Php 10,000.00 tuition fee discount.<br><br>Services rendered within 2 consecutive years can avail the 50% tuition fee discount.<br><br>Services rendered within 3 to 4 and 5 consecutive years and 6 consecutive years for those who are enrolled in a 5 year program, can avail the 100% tuition fee discount.<br><br>3.2.2 Adamson University Folk Dance Troupe<br><br>Any folk dance troupe members can avail the Php 9,000.00. Php 12,000.00 and Php 15,000.00 tuition fee discounts based on the length of services (computed on the actual enrolled courses) upon passing the audition and training;<br><br>Services rendered within 1 year can avail the Php 9,000.00 tuition fee discount.<br><br>Services rendered within 2 consecutive years can avail the Php 12,000.00 tuition fee discount.<br><br>Services rendered with 3, 4 to 5 consecutive years and 6 consecutive years for those who are enrolled in a 5 year program can avail the Php 15,000.00 tuition fee discount.<br><br>3.2.3 Adamson University Band (brass, acoustic, strings & chamber orchestra)<br><br>Any band members can avail the 50%, 75% and 100% tuition fee discounts based on the length of services and musical instruments provided (computed on the actual enrolled courses) upon passing the audition and training;<br><br>Services rendered within 1 year can avail the 50% tuition fee discount.<br><br>Services rendered within 2 consecutive years either with or without musical instruments (case to case basis) musical instruments provided or involved in 2 or more performing groups can avail the 75% tuition fee discount.<br><br>Services rendered with 3, 4 to 5 consecutive years and 6 consecutive years for those who are enrolled in a 5 year program, either with or without musical instruments (case to case basis) provide or involved in 2 or more performing groups can avail the 100% tuition fee discount.<br><br>Note: For Policies and Procedures in Recruitment and Acceptance, please refer to Article IX Section 7.<br><br>3.3 Scholarships under the Office for Athletics and Recreation (Please refer to Article IX, Section 11)<br><br>3.4 Adamson University Financial Aid Program (AUFAP)<br><br>Initiated by Fr.Gimarino, C.M. and the Adamson University Volunteer Center in Japan in 1990, the program serves financially challenged but deserving students. The program is committed to the education, growth and values formation of itsbeneficiaries.<br><br>SECTION 4. CORPORATE / PRIVATE/ INDIVIDUAL SCHOLARSHIPS<br><br>Scholars of different corporate or individual scholarships receive full (100%) or half (50%) benefit in tuition and miscellaneous fees with the condition that the required General Weighted Average (GWA) is being maintained while under the scholarship without dropped, failed, or incomplete grades. He/she is also required to attend at least two (2) activities of OSAS or of his/her college/ department every semester.<br><br>Initial Requirements:<br><br>a. Letter of Application of Intent addressed to VP for Student Affairs<br>b. Senior High School graduate/at least 2nd year level in College<br>c. Bioda/Resume with 2pcs. of 2x2 picture<br><br>d. PSA Birth Certificate<br>e. National College Assessment Exam Results<br>f. Must take the required program of the said scholarship & with Good Moral Character<br>g. Form 138 with GWA of at least 88% or semestral grade with GWA of at least 2.00 with no dropped, failed, or incomplete course<br>h. Must belong to the top 10% to 20% of the graduating class.<br>i. Recommendation letters from the Principal. Adviser. Dean, Chairperson (any 3 disinterested parties) stating the academic capabilities of the applicant.<br>j. Other requirements by Office for Student Assistance and Scholarships (OSAS)<br><br>4.1 75th Diamond Jubilee Foundation Scholarship<br><br>A scholarship grant initiated by the members of 75th Diamond Jubilee Board of Committee to benefit students who are taking up BS Chemistry program.<br><br>4.2 Adamson University Alumni Association Inc.(AUAAI) Scholarship<br><br>A scholarship grant given to students taking up any program and who maintain good academic performance without failed/ dropped grades. The scholar is required to render service to the AUAAL Office.<br><br>4.3 AdU Calgary Alumni Association Scholarship<br><br>Association of Adamson Alumni in Calgary, Alberta, Canada that was incorporated on 7th of July 2012.<br><br>4.4 AdU Chemical Engineers Alumni Association Scholarship<br><br>A group of Chemical Engineers who provide financial support to deserving students taking the same program.<br><br>4.5 AdU Chemistry Alumni Association Scholarship<br><br>Adamson University Chemistry Alumni Association Inc. la registered in the Securities and Exchange Commission (SEC) as non-government and non-profit organization. One of its initiatives is to provide financial support (funds permitting) In the form of scholarship and/or allowance assistance to deserving B.S. Chemistry students to ensure completion of their program.<br><br>4.6 AdU UAE Dubal Board of Directors Alumni Association Scholarship<br><br>A scholarship grant initiated by alumni members who are based in Dubal and other countries in United Arab Emirates to support students who are taking up Chemical Engineering.<br><br>4.7 Atty. Ponciano V. Cruz Scholarship<br><br>A scholarship grant initiated by Atty. Ponciano V. Cruz, a current faculty member of the College of law. It is extended to students who are financially challenged yet academically excelling in a certain program.<br><br>4.8 FCF Minerals Corporation Scholarship<br><br>Provides scholarship grant consisting of 100% tuition and miscellaneous fees,books, uniform and other school supplies and monthly allowance for food, transportation and cost of accommodation to qualified students in BS Geology.<br><br>4.9 Fluor Daniel Philippines, Inc. Scholarship<br><br>Provides scholarship grant in the form of financial assistance of school fees, books and clothing allowance to qualified students in engineering programs.<br><br>4.10 Gokongwei Brothers Foundation<br><br>(GBF- Petrochem- RLC STEM Scholarship for Excellence) Provides college scholarships to top ranked students in the fields of Science and Engineering to qualified incoming 3rdlo 4th Year students. Qualified scholars will be awarded a fix scholarship amount per academic year until graduation.<br><br>4.11 Holcim Philippines Scholarship<br><br>Provides scholarship to well-deserving Geology and Mining Students under its CSR program for education called FACE (Foster a Child's Education).<br><br>4.12 JG Summit Petrochemicals Group<br><br>Provides scholarship grant in the form of financial assistance in the amount of Php 42,500 per semester per school year and applicable fees to deserving students in BS Mechanical, Electrical, Chemical, Electronics and Communication Petroleum Engineering, and BS Chemistry.<br><br>4.13 Kayan Chan Scholarship Foundation<br><br>Created by the Co Family, the Foundation provides scholarship grant consisting of 100% tuition and miscellaneous fees, books, and monthly stipend allowance to qualified students in BS Industrial Engineering<br><br>4.14 La FargeHolcim Aggregates, Inc. Scholarship<br><br>Provides scholarship grant consisting of 10055 tuition and miscellaneous fees and school allowance of Php 5.000 per month.students in BS Gablogy and BS Mining Engineering.<br><br>4.15 Luk Co Chi Klat Foundation, Inc. (LCCKFI)Founded and registered on March 28, 2003 by the children of the late Luis Co Chi Kiat. The children believe that the foundation is a vehicle by which the values and ideals of their father will be sustained - to keep alive their father's concept of work and productivity.<br><br>Provides scholarship grant consisting of 100% tuition and miscellaneous fees, living, book and uniform allowance per semester to deserving and qualified regular students in any program under the College of Business Administration<br><br>4.16 Megaworld Foundation Scholarship<br><br>A company scholarship grant managed by the OSAS and the Megaworld Foundation Inc. open to qualified students who are taking up Architecture, Accountancy, Engineering, Human Resource Management, and any Business related programs. The scholars are required to actively participate with the events conducted by Megaworld Foundation Inc.<br><br>4.17 MERCK Scholarship<br><br>A company scholarship grant managed by the OSAS and MERCK Inc. given to qualified students who are taking up programs in Chemistry and Geology.<br><br>4.18 Mercury Drug Foundation<br><br>MOFI's scholarship program covers tuition, miscellaneous school fees, food and transportation expenses of deserving but financially-challenged pharmacy students enrolled in member schools of the Philippine Association of Colleges of Pharmacy (PACOP). Eligible to apply are incoming third and fourth year Pharmacy students with a general weighted average of 2.5 and above: of good moral character, single and not more than 21 years old: not on any other scholarship or educational plan, with a combined family income of not more than P-250,000 or less per year, and not a dependent of an employee of Mercury Drug Corporation. Mercury Group of Companies or its subsidiaries.<br><br>4.19 Petron Foundation Scholarship<br><br> In partnership with the Department of Social Welfare and Development (DSWD) the Department Education (DepEd) the Philippine Business for Social Progress and the World Vision Development Foundation, the Company continued its Tulong Araling Petron (Tulong Ara), a long term, strategic initiative that helps send poor children  to school, keep them there and make sure they learn. Tulong Aral has scholarship programs for elementary high school and college students The scholars enjoy the benefits of Patron's send a child to school program. including the provision of books, school supplies, shoes and uniforms, daily meal allowances for children, as well as capability building and livelihood programs forparents. Graduating college scholars will have an opportunity to join the Patron family.<br><br>4.20 Petron Bataan Refinery (PBR) Scholarship<br><br>In partnership with the country's top universities. Petron through the Special Campus Recruitment Program Scholarship Grant that provides scholarships toengineering students who have passed its rigorous evaluation spearheaded by Patron Refinery Audit and Management Systems (RAMS) Manager Engr Aurelio P Uapal, Jr.<br><br> The scholarship package includes full tuition fee, monthly living allowanca, and annual miscellaneous academic expenses. Part of the Scholarship is the opportunity to be selected as an apprentice to be trained in the refinery and eventually earning an opportunity to be employed in Petron. This la PBR's way of giving back to the academe and to the country by helping to shape the next generation of Filipino engineers.<br><br>4.21 PHILTRUST Scholarship (formerly known as Dr. Emilio T. Yap Scholarship Grant)<br><br>A company scholarship grant managed by the OSAS and the PHILTRUST Scholarship given to qualified students who are taking up any Business program.<br><br>4.22 Rotary Club of Manila Bay<br><br>Provides scholarship grant through the initiative of Atty. Ponciano V. Cruz consisting of 100% tuition and miscellaneous fees to any students who are financially challenged yet academically excelling on a certain program.<br><br>4.23 Sami Al Hamadi Scholarship<br><br>Named after a successful Industrial Engineering Alumnus from the United Arab Emirates (UAE), who is also the Managing Director of Emirates Fire Fighting Equipment Factory LLC. He finished his bachelor, master and doctorate studies in Adamson University, Currently, he helps & supports students who are financially disadvantaged but academically deserving.<br><br>4.24 Simplicio Gamboa Sr. Foundation, Inc. (SGS Foundation)<br><br>A non-stock, non-profit corporation duly organized and registered with the Securities and Exchange Commission dedicated to provide educationalopportunities to the less fortunate but deserving youth of the land. Provides and grants scholarship and other form of financial assistance to those who are qualified to undertake studies and or educational endeavors in all fields.<br><br>SECTION 5. FINANCIAL ASSISTANCE PROGRAM OR BRIDGE PROGRAM<br><br>A special financial assistance program co-founded by Rev. Fr. Gregorio L Banaga, Jr.. C.M. with the aim of extending financial help to students who are graduating or have only a few semesters to go before graduation Funds in this program came from solicited efforts of the University President from alumni, friends, partner companies, donations from private individuals and coordinated projects with Finance Department. The assistance given to the beneficiaries is in the form of down payment.",
+    "Adamson University provides various scholarships, including those for Chemistry students, Alumni Association scholarships, and scholarships from corporate sponsors. These scholarships typically cover tuition and miscellaneous fees, and they require students to maintain a certain GPA and engage in university activities. There is also a Financial Assistance Program for students close to graduation, funded by donations from various sources.",
+    "The university offers various scholarships and financial aid programs to support deserving students who may be facing financial challenges. These programs cover a range of fields, from academic performance to involvement in cultural and athletic activities. Additionally, there are corporate and private scholarships available, each with its own specific criteria and benefits. The university also offers a special financial assistance program for students nearing graduation."
+    ]
+},
+{
+    "tag": "University Academic Scholarships",
+    "patterns": 
+    [
+    "",
+    "",
+    ""
+    ],
+    "responses": 
+    [
+    ""
+    ]
+},
+{
+    "tag": "University Academic Scholarships",
+    "patterns": 
+    [
+    "",
+    "",
+    ""
+    ],
+    "responses": 
+    [
+    ""
+    ]
+},
+{
+    "tag": "University Academic Scholarships",
+    "patterns": 
+    [
+    "",
+    "",
+    ""
+    ],
+    "responses": 
+    [
+    ""
+    ]
+},
+{
+    "tag": "University Academic Scholarships",
+    "patterns": 
+    [
+    "",
+    "",
+    ""
+    ],
+    "responses": 
+    [
+    ""
+    ]
+},
+{
+    "tag": "University Academic Scholarships",
+    "patterns": 
+    [
+    "",
+    "",
+    ""
+    ],
+    "responses": 
+    [
+    ""
+    ]
+},
+{
+    "tag": "University Academic Scholarships",
+    "patterns": 
+    [
+    "",
+    "",
+    ""
+    ],
+    "responses": 
+    [
+    ""
+    ]
+},
+{
+    "tag": "University Academic Scholarships",
+    "patterns": 
+    [
+    "",
+    "",
+    ""
+    ],
+    "responses": 
+    [
+    ""
+    ]
+},
+{
+    "tag": "University Academic Scholarships",
+    "patterns": 
+    [
+    "",
+    "",
+    ""
+    ],
+    "responses": 
+    [
+    ""
+    ]
+},
+{
+    "tag": "University Academic Scholarships",
+    "patterns": 
+    [
+    "",
+    "",
+    ""
+    ],
+    "responses": 
+    [
+    ""
+    ]
+},
+{
+    "tag": "University Academic Scholarships",
+    "patterns": 
+    [
+    "",
+    "",
+    ""
+    ],
+    "responses": 
+    [
+    ""
+    ]
+},
+{
+    "tag": "University Academic Scholarships",
+    "patterns": 
+    [
+    "",
+    "",
+    ""
+    ],
+    "responses": 
+    [
+    ""
+    ]
+},
+{
+    "tag": "University Academic Scholarships",
+    "patterns": 
+    [
+    "",
+    "",
+    ""
+    ],
+    "responses": 
+    [
+    ""
+    ]
+},
+{
+    "tag": "University Academic Scholarships",
+    "patterns": 
+    [
+    "",
+    "",
+    ""
+    ],
+    "responses": 
+    [
+    ""
+    ]
+},
+{
+    "tag": "University Academic Scholarships",
+    "patterns": 
+    [
+    "",
+    "",
+    ""
+    ],
+    "responses": 
+    [
+    ""
+    ]
+},
+{
+    "tag": "University Academic Scholarships",
+    "patterns": 
+    [
+    "",
+    "",
+    ""
+    ],
+    "responses": 
+    [
+    ""
+    ]
+},
+{
+    "tag": "University Academic Scholarships",
+    "patterns": 
+    [
+    "",
+    "",
+    ""
+    ],
+    "responses": 
+    [
+    ""
+    ]
+},
+{
+    "tag": "University Academic Scholarships",
+    "patterns": 
+    [
+    "",
+    "",
+    ""
+    ],
+    "responses": 
+    [
+    ""
+    ]
+},
+{
+    "tag": "University Academic Scholarships",
+    "patterns": 
+    [
+    "",
+    "",
+    ""
+    ],
+    "responses": 
+    [
+    ""
+    ]
+},
+{
+    "tag": "University Academic Scholarships",
+    "patterns": 
+    [
+    "",
+    "",
+    ""
+    ],
+    "responses": 
+    [
+    ""
+    ]
+},
+{
+    "tag": "University Academic Scholarships",
+    "patterns": 
+    [
+    "",
+    "",
+    ""
+    ],
+    "responses": 
+    [
+    ""
+    ]
+},
+{
+    "tag": "University Academic Scholarships",
+    "patterns": 
+    [
+    "",
+    "",
+    ""
+    ],
+    "responses": 
+    [
+    ""
+    ]
+}
+]
+}
