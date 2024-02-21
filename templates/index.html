@@ -16,8 +16,7 @@
     />
     <audio id="userSound" src="/static/userSend.mp3"></audio>
     <audio id="botSound" src="/static/botSend.mp3"></audio>
-
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <style>
       :root {
         --white: #fff;
@@ -31,8 +30,7 @@
       * {
         font-family: "Oswald", sans-serif;
         margin: 0;
-  padding: 0;
-     
+        padding: 0;
       }
 
       h2 {
@@ -41,26 +39,30 @@
         margin-right: auto;
       }
       /* For WebKit-based browsers */
-::-webkit-scrollbar {
-    width: 12px; /* Set the width of the scrollbar */
-}
+      ::-webkit-scrollbar {
+        width: 12px; /* Set the width of the scrollbar */
+      }
 
-/* Track */
-::-webkit-scrollbar-track {
-    background-color: #f1f1f1; /* Set the background color of the track */
-}
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background-color: #f1f1f1; /* Set the background color of the track */
+      }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background-color: rgba(76, 157, 207, 0.705); /* Set the color of the scrollbar handle */
-    border-radius: 6px; /* Set the border radius of the handle */
-}
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background-color: rgba(
+          76,
+          157,
+          207,
+          0.705
+        ); /* Set the color of the scrollbar handle */
+        border-radius: 6px; /* Set the border radius of the handle */
+      }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background-color: #115fa8; /* Set the color of the handle on hover */
-}
-
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #115fa8; /* Set the color of the handle on hover */
+      }
 
       /* Chat container styles */
       #chat-container {
@@ -106,42 +108,44 @@
         background-color: #3c76a9;
         color: #fff;
         text-align: right;
-        max-width: 50%;
+        width: fit-content;
+        max-width: 80%;
         padding: 8px;
-       justify-content: flex-end;
+        justify-content: flex-end;
         margin-left: auto;
       }
 
       .user-icon::before {
-        background-image: url('static/usericon1.png');
-  background-size: cover;
-  width: 35px; /* Adjust the width and height according to your image size */
-  height: 35px;
-  margin-left: 10px;
-  border-radius: 50%;
-  content: ''; /* Empty content, necessary for the pseudo-element to appear */
-  display: inline-block; /* Ensures the pseudo-element is inline and takes up space */
+        background-image: url("static/usericon1.png");
+        background-size: cover;
+        width: 35px; /* Adjust the width and height according to your image size */
+        height: 35px;
+        margin-left: 10px;
+        border-radius: 50%;
+        content: ""; /* Empty content, necessary for the pseudo-element to appear */
+        display: inline-block; /* Ensures the pseudo-element is inline and takes up space */
       }
 
       /* Bot message styles */
       .bot-message {
         background-color: #fff;
         color: #000;
-        max-width: 50%;
+        width: fit-content;
+        max-width: 80%;
         padding: 8px;
         justify-content: flex-start;
         margin-right: auto;
       }
 
       .bot-icon::before {
-        background-image: url('static/boticon1.png');
-  background-size: cover;
-  width: 35px; /* Adjust the width and height according to your image size */
-  height: 35px;
-  margin-right: 10px;
-  border-radius: 50%;
-  content: ''; /* Empty content, necessary for the pseudo-element to appear */
-  display: inline-block; /* Ensures the pseudo-element is inline and takes up space */
+        background-image: url("static/boticon1.png");
+        background-size: cover;
+        width: 35px; /* Adjust the width and height according to your image size */
+        height: 35px;
+        margin-right: 10px;
+        border-radius: 50%;
+        content: ""; /* Empty content, necessary for the pseudo-element to appear */
+        display: inline-block; /* Ensures the pseudo-element is inline and takes up space */
       }
 
       /* User input and send button styles */
@@ -197,9 +201,9 @@
         left: 0;
         width: 100%;
         height: 100%;
-        z-index: -1; 
-        filter: blur(5px); 
-        background-image: url(static/adubg.jpg); 
+        z-index: -1;
+        filter: blur(5px);
+        background-image: url(static/adubg.jpg);
         background-size: cover;
       }
 
@@ -217,7 +221,7 @@
         cursor: pointer;
       }
 
-      #mySidebar{
+      #mySidebar {
         box-shadow: 0 0 10px var(--black);
         border: 1px solid var(--water);
         background-color: var(--blue);
@@ -233,7 +237,7 @@
         z-index: 1;
         align-items: center;
       }
-      #mySidebar.active{
+      #mySidebar.active {
         margin-left: 240px;
       }
       .sidebar::-webkit-scrollbar {
@@ -245,7 +249,7 @@
         padding: 5px;
       }
       .sidebar-logo img {
-        max-width: 180px; 
+        max-width: 180px;
         height: auto;
         margin-top: 30px;
       }
@@ -255,60 +259,126 @@
         align-items: flex-start;
         margin-top: 20px;
       }
-  
-      .typing-animation {
-  position: absolute;
-  visibility: visible;
-}
 
-.header{
-  width: 100%;
-  height: 45px;
-  background-color: #003366;
-  color: white;
-  display: flex;
-  justify-content: flex-start;
-}
-hr {
-  display: block;
-  width: 200px;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: auto;
-  margin-right: auto;
-  background-color:#526D82;
-  border-width:3px;
-}
+      .typing-animation {
+        position: absolute;
+        visibility: visible;
+      }
+
+      .header {
+        width: 100%;
+        height: 45px;
+        background-color: #003366;
+        color: white;
+        display: flex;
+        justify-content: flex-start;
+      }
+      hr {
+        display: block;
+        width: 200px;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #526d82;
+        border-width: 3px;
+      }
     </style>
   </head>
   <body>
     <div class="background"></div>
-    <div class="header"> 
-    <button class="toggle-button" onclick="toggleSidebar()" style="border: none; background: none; padding: 0; outline: none;">
-      <img src="{{ url_for('static', filename='adam.png') }}" alt="Logo" style="width: 35px; height: 35px; margin-top: 3px; margin-left: 5px; border-radius: 50%; border: 2px solid white;" />
-    </button> 
-    <h2 style=" font-size: 20px; margin-top: 5px;">AdU - Guide N' Go!</h2>
+    <div class="header">
+      <button
+        class="toggle-button"
+        onclick="toggleSidebar()"
+        style="border: none; background: none; padding: 0; outline: none"
+      >
+        <img
+          src="{{ url_for('static', filename='adam.png') }}"
+          alt="Logo"
+          style="
+            width: 35px;
+            height: 35px;
+            margin-top: 3px;
+            margin-left: 5px;
+            border-radius: 50%;
+            border: 2px solid white;
+          "
+        />
+      </button>
+      <h2 style="font-size: 20px; margin-top: 5px">AdU - Guide N' Go!</h2>
     </div>
     <aside class="sidebar" id="mySidebar">
       <div class="sidebar-logo">
-        <img id="toggle-icon" src="{{ url_for('static', filename='boticon2.png') }}" alt="Logo" />
+        <img
+          id="toggle-icon"
+          src="{{ url_for('static', filename='boticon2.png') }}"
+          alt="Logo"
+        />
       </div>
-      <hr>
+      <hr />
       <div class="sidebar-links">
         <div class="spacer"></div>
-        <a class="list-item" href="/"><i><box-icon color="var(--white)" name="line-chart"></box-icon></i>Chat with Adam</a>
-        <a class="list-item" href="/map"><i><box-icon color="var(--white)" name="line-chart"></box-icon></i>Campus Maps</a>
-        <a class="list-item" href="/prayer"><i><box-icon color="var(--white)" name="line-chart"></box-icon></i>Adamsonian Prayer</a>
-        <br>
-        <hr>
-        <br>
-        <a class="list-item" onclick="activateListItem(this)" href="https://www.adamson.edu.ph/2018/"><i><box-icon color="var(--white)" name="dashboard" type="solid"></box-icon></i>Adamson Website</a>
-        <a class="list-item" onclick="activateListItem(this)" href="https://live.adamson.edu.ph"><i><box-icon color="var(--white)" name="dashboard" type="solid"></box-icon></i>Adamson Live</a>
-        <a class="list-item" onclick="activateListItem(this)" href="https://learn.adamson.edu.ph/V4/"><i><box-icon color="var(--white)" name="dashboard" type="solid"></box-icon></i>Learning Management System</a>
-        <a class="list-item" onclick="activateListItem(this)" href="https://adamson.blackboard.com"><i><box-icon color="var(--white)" name="line-chart"></box-icon></i>Blackboard Learn</a>
+        <a class="list-item" href="/"
+          ><i><box-icon color="var(--white)" name="line-chart"></box-icon></i
+          >Chat with Adam</a
+        >
+        <a class="list-item" href="/map"
+          ><i><box-icon color="var(--white)" name="line-chart"></box-icon></i
+          >Campus Maps</a
+        >
+        <a class="list-item" href="/prayer"
+          ><i><box-icon color="var(--white)" name="line-chart"></box-icon></i
+          >Adamsonian Prayer</a
+        >
+        <br />
+        <hr />
+        <br />
+        <a
+          class="list-item"
+          onclick="activateListItem(this)"
+          href="https://www.adamson.edu.ph/2018/"
+          ><i
+            ><box-icon
+              color="var(--white)"
+              name="dashboard"
+              type="solid"
+            ></box-icon></i
+          >Adamson Website</a
+        >
+        <a
+          class="list-item"
+          onclick="activateListItem(this)"
+          href="https://live.adamson.edu.ph"
+          ><i
+            ><box-icon
+              color="var(--white)"
+              name="dashboard"
+              type="solid"
+            ></box-icon></i
+          >Adamson Live</a
+        >
+        <a
+          class="list-item"
+          onclick="activateListItem(this)"
+          href="https://learn.adamson.edu.ph/V4/"
+          ><i
+            ><box-icon
+              color="var(--white)"
+              name="dashboard"
+              type="solid"
+            ></box-icon></i
+          >Learning Management System</a
+        >
+        <a
+          class="list-item"
+          onclick="activateListItem(this)"
+          href="https://adamson.blackboard.com"
+          ><i><box-icon color="var(--white)" name="line-chart"></box-icon></i
+          >Blackboard Learn</a
+        >
       </div>
     </aside>
-
 
     <div id="chat-container" class="blurry-gradient">
       <div id="chat-output">
@@ -328,13 +398,12 @@ hr {
       <button id="send-button">Send</button>
     </div>
     <script>
-    
       function toggleSidebar() {
         var sidebar = document.getElementById("mySidebar");
         var chatContainer = document.getElementById("chat-container");
         var toggleButton = document.querySelector(".toggle-button");
         var pageContent = document.querySelector(".page-content");
-    
+
         if (sidebar.style.width === "240px") {
           sidebar.style.display = "none";
           sidebar.style.width = "0";
@@ -349,80 +418,128 @@ hr {
           pageContent.style.marginLeft = "240px";
         }
       }
-    
+
       document.addEventListener("DOMContentLoaded", function () {
-  const chatContainer = document.getElementById("chat-container");
-  const chatOutput = document.getElementById("chat-output");
-  const userInput = document.getElementById("user-input");
-  const sendButton = document.getElementById("send-button");
-  const userSound = document.getElementById("userSound");
-  const botSound = document.getElementById("botSound");
-  const typingElement = document.getElementById("typing");
+        const chatContainer = document.getElementById("chat-container");
+        const chatOutput = document.getElementById("chat-output");
+        const userInput = document.getElementById("user-input");
+        const sendButton = document.getElementById("send-button");
+        const userSound = document.getElementById("userSound");
+        const botSound = document.getElementById("botSound");
+        const typingElement = document.getElementById("typing");
 
-  sendButton.addEventListener("click", function () {
-    sendMessage();
-  });
+        sendButton.addEventListener("click", function () {
+          sendMessage();
+        });
 
-  userInput.addEventListener("keypress", function (e) {
-    if (e.key === "Enter") {
-      sendMessage();
-    }
-  });
+        userInput.addEventListener("keypress", function (e) {
+          if (e.key === "Enter") {
+            sendMessage();
+          }
+        });
 
-  function sendMessage() {
-  const userMessage = userInput.value;
-  if (!userMessage) return;
+        function sendMessage() {
+          const userMessage = userInput.value;
+          if (!userMessage) return;
 
-  // Append the user's message to the chat
-  chatOutput.innerHTML += `<div class="message user-message">
-    ${userMessage}
-    <i class="far fa-user user-icon"></i>
-  </div>`;
-  userInput.value = "";
-  userSound.play(); // Play user message audio
+          // Append the user's message to the chat
+          chatOutput.innerHTML += `<div class="message user-message">
+                    ${userMessage}
+                    <i class="far fa-user user-icon"></i>
+                </div>`;
+          userInput.value = "";
+          userSound.play(); // Play user message audio
 
-  // Show typing animation within the bot's response
-  chatOutput.innerHTML += `<div class="message bot-message">
-      <i class="far fa-user-circle bot-icon"></i>
-      
-      <div class="typing-animation" style="visibility: visible;">
-        <img src="/static/typingnow.gif" style="width: 70px; height: 44px; margin-left: 40px; padding: 4px;">
-      </div>
-  </div>`;
-
-  // Add a delay (response time) before displaying the bot's actual response
-  setTimeout(function () {
-    // Send the user's message to the server and get the bot's response
-    fetch("/get_response", {
-      method: "POST",
-      body: new URLSearchParams({ user_message: userMessage }),
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        const botResponse = data.bot_response;
-
-        // Remove the "Typing..." message
-        const typingMessage = document.querySelector('.message.bot-message:last-child');
-        if (typingMessage) {
-          typingMessage.innerHTML = `<i class="far fa-user-circle bot-icon"></i>${botResponse}`;
-        } else {
-          // If there is no typing message, append the bot's response to the chat
+          // Show typing animation within the bot's response
           chatOutput.innerHTML += `<div class="message bot-message">
-            <i class="far fa-user-circle bot-icon"></i>
-            ${botResponse}
-          </div>`;
+                    <i class="far fa-user-circle bot-icon"></i>
+                    
+                    <div class="typing-animation" style="visibility: visible;">
+                        <img src="/static/typingnow.gif" style="width: 70px; height: 44px; margin-left: 40px; padding: 4px;">
+                    </div>
+                </div>`;
+
+          // Add a delay (response time) before displaying the bot's actual response
+          setTimeout(function () {
+            // Send the user's message to the server and get the bot's response
+            fetch("/get_response", {
+              method: "POST",
+              body: new URLSearchParams({ user_message: userMessage }),
+              headers: {
+                "Content-Type": "application/x-www-form-urlencoded",
+              },
+            })
+              .then((response) => response.json())
+              .then((data) => {
+                const botResponse = data.bot_response;
+                const prompt = data.prompt; // New addition: get the prompt from the server
+
+                // Remove the "Typing..." message
+                const typingMessage = document.querySelector(
+                  ".message.bot-message:last-child"
+                );
+                if (typingMessage) {
+                  typingMessage.innerHTML = `<i class="far fa-user-circle bot-icon"></i>${botResponse}`;
+                } else {
+                  // If there is no typing message, append the bot's response to the chat
+                  chatOutput.innerHTML += `<div class="message bot-message">
+                                <i class="far fa-user-circle bot-icon"></i>
+                                ${botResponse}
+                            </div>`;
+                }
+
+                botSound.play(); // Play bot message audio
+
+                if (prompt) {
+                  // Custom prompt with Yes/No buttons using SweetAlert2
+                  setTimeout(() => {
+                    // Introduce a delay of 3 seconds before showing the prompt
+                    Swal.fire({
+                      title: prompt,
+                      icon: "question",
+                      showCancelButton: true,
+                      confirmButtonText: "Yes",
+                      cancelButtonText: "No",
+                    }).then((result) => {
+                      if (result.isConfirmed) {
+                        // User clicked 'Yes'
+                        sendFeedback("yes");
+                      } else {
+                        // User clicked 'No'
+                        sendFeedback("no");
+                      }
+                    });
+
+                    // Function to send feedback to the server
+                    function sendFeedback(feedback) {
+                      fetch("/handle_feedback", {
+                        method: "POST",
+                        body: new URLSearchParams({ user_feedback: feedback }),
+                        headers: {
+                          "Content-Type": "application/x-www-form-urlencoded",
+                        },
+                      })
+                        .then((feedbackResponse) => feedbackResponse.json())
+                        .then((feedbackData) => {
+                          const feedbackBotResponse = feedbackData.bot_response;
+
+                          // Display the bot's response based on the user's feedback
+                          // Update the chat output with the new bot response
+                          chatOutput.innerHTML += `<div class="message bot-message">
+                                <i class="far fa-user-circle bot-icon"></i>
+                                ${feedbackBotResponse}
+                            </div>`;
+
+                          // Optionally, you can play bot message audio or perform other actions
+                          botSound.play();
+                        });
+                    }
+                  }, 2000); // Adjust the delay duration in milliseconds (e.g., 3000 for 3 seconds)
+                }
+              });
+          }, 1500); // Adjust the delay duration in milliseconds (e.g., 1500 for 1.5 seconds)
         }
-
-        botSound.play(); // Play bot message audio
       });
-  }, 1500); // Adjust the delay duration in milliseconds (e.g., 1500 for 1.5 seconds)
-}
-
-});
-
-    </script>    
+    </script>
   </body>
 </html>
